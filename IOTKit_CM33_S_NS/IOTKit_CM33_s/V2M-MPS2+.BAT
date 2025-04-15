@@ -1,0 +1,30 @@
+SET PATH=C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin;C:\Program Files (x86)\STMicroelectronics\stlink_server;C:\ST\STM32CubeCLT_1.16.0;C:\ST\STM32CubeCLT_1.16.0\CMake\bin;C:\ST\STM32CubeCLT_1.16.0\Ninja\bin;C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin;C:\ST\STM32CubeCLT_1.16.0\STLink-gdb-server\bin;C:\ST\STM32CubeCLT_1.16.0\STM32CubeProgrammer\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;P:\Strawberry\c\bin;P:\Strawberry\perl\site\bin;P:\Strawberry\perl\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\PowerShell\7\;C:\Users\aj4775\AppData\Local\Microsoft\WindowsApps;C:\Users\aj4775\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\qemu;C:\Program Files\Git\bin;C:\Users\aj4775\AppData\Local\miniconda3\condabin;C:\Users\aj4775\.dotnet\tools;C:\openocd-0.10.0\bin;C:\msys64\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;P:\mingw64\bin;C:\msys64\ucrt64\bin;P:\MiKTeX\miktex\bin\x64\;P:\Strawberry\perl\bin;C:\Users\aj4775\AppData\Local\GitHubDesktop\bin
+SET CPU_TYPE=IOTKit_CM33_FP
+SET CPU_VENDOR=ARM
+SET UV2_TARGET=V2M-MPS2+
+SET CPU_CLOCK=0x00B71B00
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\main_s._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\main_s.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\stdout_usart._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\stdout_usart.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\mtb._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mtb.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\secure_functions._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\secure_functions.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\cfa._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\cfa.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\glcd_fonts._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\glcd_fonts.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\glcd_v2m-mps2._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\glcd_v2m-mps2.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\led_v2m-mps2._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\led_v2m-mps2.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\usart_v2m-mps2._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\usart_v2m-mps2.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\retarget_io._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\retarget_io.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\startup_iotkit_cm33._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\startup_iotkit_cm33.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\listings\system_iotkit_cm33._ll"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\system_iotkit_cm33.__i"
+"C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin\ArmLink" --Via ".\Objects\IOTKit_CM33_s.lnp"

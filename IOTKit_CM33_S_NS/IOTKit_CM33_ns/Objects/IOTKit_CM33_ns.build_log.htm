@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Antonio Joia
+Rochester Institute of Technology
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: May 31 2033. Cached until: Nov 20 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.41.0.0
+Toolchain Path:  C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      CMSIS_AGDI_V8M.DLL V1.8.5.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_ns\IOTKit_CM33_ns.uvprojx
+Project File Date:  11/14/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\aj4775\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build Project 'IOTKit_CM33_ns' - Target 'V2M-MPS2+'
+assembling application.s...
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_ns\main_ns.c(10): warning: In file included from...
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_s\Secure_Functions.h(27): warning: 'cmse_nonsecure_call' attribute ignored [-Wignored-attributes]
+   27 | typedef int32_t (*NonSecure_fpParam)(uint32_t) __attribute__((cmse_nonsecure_call));
+      |                                                               ^
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_s\Secure_Functions.h(28): warning: 'cmse_nonsecure_call' attribute ignored [-Wignored-attributes]
+   28 | typedef void (*NonSecure_fpVoid)(void) __attribute__((cmse_nonsecure_call));
+      |                                                       ^
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_ns\main_ns.c(11): warning: In file included from...
+P:\Workspace\Git\MTB_CFA\IOTKit_CM33_S_NS\IOTKit_CM33_ns\application.h(4): error: 'alcata_definitions.h' file not found
+    4 | #include "alcata_definitions.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 1 error generated.
+compiling main_ns.c...
+".\Objects\IOTKit_CM33_ns.axf" - 1 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.MDK-Middleware.7.17.0.pack
+                Keil::MDK-Middleware@7.17.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: LED Version: 1.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.V2M-MPS2_IOTKit_BSP.1.5.2.pack
+                Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+                ARM V2M-MPS2 Device Family Pack for IOT-Kit devices
+   * Component: LED Version: 2.0.0
+   * Component: Startup Variant: C Startup Version: 1.2.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/IOTKit_CM33_FP
+  ./RTE/_V2M-MPS2_
+  C:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board
+  C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include
+  C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:LED(API)@1.0.0
+      Include file:  Board/Board_LED.h
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+
+   * Component: Keil::Board Support&V2M-MPS2 IOT-Kit:LED@2.0.0
+      Source file:   Boards/ARM/V2M-MPS2/Common/LED_V2M-MPS2.c
+
+   * Component: Keil::Device:Startup&C Startup@1.2.0
+      Include file:  Device/Common/Include/SMM_MPS2.h
+      Source file:   Device/IOTKit_CM33/Source/system_IOTKit_CM33.c
+      Include file:  CMSIS/Config/RTE_Device.h
+      Include file:  Device/IOTKit_CM33/Include/Template/partition_IOTKit_CM33.h
+      Source file:   Device/IOTKit_CM33/Source/startup_IOTKit_CM33.c
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

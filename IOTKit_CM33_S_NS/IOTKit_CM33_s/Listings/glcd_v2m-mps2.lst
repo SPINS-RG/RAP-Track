@@ -1,0 +1,3814 @@
+	.text
+	.syntax unified
+	.eabi_attribute	67, "2.09"	@ Tag_conformance
+	.cpu	cortex-m33
+	.eabi_attribute	6, 17	@ Tag_CPU_arch
+	.eabi_attribute	7, 77	@ Tag_CPU_arch_profile
+	.eabi_attribute	8, 0	@ Tag_ARM_ISA_use
+	.eabi_attribute	9, 3	@ Tag_THUMB_ISA_use
+	.fpu	fpv5-sp-d16
+	.eabi_attribute	27, 1	@ Tag_ABI_HardFP_use
+	.eabi_attribute	36, 1	@ Tag_FP_HP_extension
+	.eabi_attribute	46, 1	@ Tag_DSP_extension
+	.eabi_attribute	34, 1	@ Tag_CPU_unaligned_access
+	.eabi_attribute	17, 1	@ Tag_ABI_PCS_GOT_use
+	.eabi_attribute	20, 2	@ Tag_ABI_FP_denormal
+	.eabi_attribute	21, 0	@ Tag_ABI_FP_exceptions
+	.eabi_attribute	23, 1	@ Tag_ABI_FP_number_model
+	.eabi_attribute	24, 1	@ Tag_ABI_align_needed
+	.eabi_attribute	25, 1	@ Tag_ABI_align_preserved
+	.eabi_attribute	28, 1	@ Tag_ABI_VFP_args
+	.eabi_attribute	38, 1	@ Tag_ABI_FP_16bit_format
+	.eabi_attribute	18, 2	@ Tag_ABI_PCS_wchar_t
+	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
+	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
+	.file	"GLCD_V2M-MPS2.c"
+	.file	1 "C:\\Users\\aj4775\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include" "stdint.h"
+	.file	2 "C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common" "GLCD_V2M-MPS2.c"
+	.file	3 "C:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board" "Board_GLCD.h"
+	.file	4 "C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include" "SMM_MPS2.h"
+	.section	.text.GLCD_Initialize,"ax",%progbits
+	.hidden	GLCD_Initialize                 @ -- Begin function GLCD_Initialize
+	.globl	GLCD_Initialize
+	.p2align	2
+	.type	GLCD_Initialize,%function
+	.code	16                              @ @GLCD_Initialize
+	.thumb_func
+GLCD_Initialize:
+.Lfunc_begin0:
+	.loc	2 255 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:255:0
+	.fnstart
+	.cfi_sections .debug_frame
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#112
+	sub	sp, #112
+	.cfi_def_cfa_offset 120
+	movw	r1, #24580
+	movt	r1, #16416
+	movs	r0, #0
+.Ltmp0:
+	.loc	2 258 24 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:258:24
+	str	r0, [sp, #108]                  @ 4-byte Spill
+	str	r0, [r1]
+	movw	r2, #24612
+	movt	r2, #16416
+	.loc	2 259 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:259:24
+	str	r0, [r2]
+	movw	r2, #24596
+	movt	r2, #16416
+	.loc	2 260 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:260:24
+	str	r0, [r2]
+	movw	r2, #24608
+	movt	r2, #16416
+	movs	r0, #3
+	.loc	2 261 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:261:24
+	str	r0, [r2]
+	movw	r2, #24576
+	movt	r2, #16416
+	movw	r0, #263
+	.loc	2 263 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:263:24
+	str	r0, [r2]
+	movw	r2, #24592
+	movt	r2, #16416
+	movs	r0, #2
+	.loc	2 268 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:268:24
+	str	r0, [sp, #4]                    @ 4-byte Spill
+	str	r0, [r2]
+	.loc	2 269 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:269:24
+	str	r0, [r1]
+	movw	r1, #8268
+	movt	r1, #16432
+	.loc	2 273 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:273:26
+	str	r1, [sp, #104]                  @ 4-byte Spill
+	ldr	r0, [r1]
+	orr	r0, r0, #9
+	str	r0, [r1]
+	.loc	2 275 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:275:26
+	ldr	r0, [r1]
+	bic	r0, r0, #112
+	str	r0, [r1]
+	.loc	2 280 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:280:26
+	ldr	r0, [r1]
+	bic	r0, r0, #8
+	str	r0, [r1]
+	movs	r0, #1
+	.loc	2 281 2                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:281:2
+	str	r0, [sp, #88]                   @ 4-byte Spill
+	bl	delay_ms
+	ldr	r1, [sp, #104]                  @ 4-byte Reload
+	.loc	2 282 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:282:26
+	ldr	r0, [r1]
+	orr	r0, r0, #8
+	str	r0, [r1]
+	movs	r0, #5
+	.loc	2 283 2                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:283:2
+	bl	delay_ms
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	movs	r0, #234
+	.loc	2 288 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:288:5
+	bl	wr_reg
+	movs	r0, #235
+	movs	r1, #32
+	.loc	2 289 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:289:5
+	bl	wr_reg
+	movs	r0, #236
+	movs	r1, #12
+	.loc	2 290 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:290:5
+	str	r1, [sp, #20]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #237
+	movs	r1, #199
+	.loc	2 291 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:291:5
+	bl	wr_reg
+	movs	r0, #232
+	movs	r1, #56
+	.loc	2 292 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:292:5
+	str	r1, [sp, #68]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #233
+	movs	r1, #16
+	.loc	2 293 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:293:5
+	str	r1, [sp, #84]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #88]                   @ 4-byte Reload
+	movs	r0, #241
+	.loc	2 294 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:294:5
+	bl	wr_reg
+	ldr	r1, [sp, #84]                   @ 4-byte Reload
+	movs	r0, #242
+	.loc	2 295 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:295:5
+	bl	wr_reg
+	ldr	r1, [sp, #88]                   @ 4-byte Reload
+	movs	r0, #64
+	.loc	2 298 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:298:5
+	str	r0, [sp, #96]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	movs	r0, #65
+	.loc	2 299 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:299:5
+	bl	wr_reg
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	movs	r0, #66
+	.loc	2 300 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:300:5
+	bl	wr_reg
+	ldr	r1, [sp, #84]                   @ 4-byte Reload
+	movs	r0, #67
+	.loc	2 301 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:301:5
+	bl	wr_reg
+	movs	r0, #68
+	movs	r1, #14
+	.loc	2 302 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:302:5
+	str	r1, [sp, #80]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #69
+	movs	r1, #36
+	.loc	2 303 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:303:5
+	str	r1, [sp, #28]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #70
+	movs	r1, #4
+	.loc	2 304 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:304:5
+	bl	wr_reg
+	movs	r0, #71
+	movs	r1, #80
+	.loc	2 305 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:305:5
+	str	r1, [sp, #8]                    @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #4]                    @ 4-byte Reload
+	movs	r0, #72
+	.loc	2 306 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:306:5
+	bl	wr_reg
+	movs	r0, #73
+	movs	r1, #19
+	.loc	2 307 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:307:5
+	str	r1, [sp, #100]                  @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #74
+	movs	r1, #25
+	.loc	2 308 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:308:5
+	str	r1, [sp, #36]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #36]                   @ 4-byte Reload
+	movs	r0, #75
+	.loc	2 309 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:309:5
+	bl	wr_reg
+	movs	r0, #76
+	movs	r1, #22
+	.loc	2 310 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:310:5
+	str	r1, [sp, #76]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r0, [sp, #8]                    @ 4-byte Reload
+	movs	r1, #27
+	.loc	2 312 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:312:5
+	str	r1, [sp, #24]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #81
+	movs	r1, #49
+	.loc	2 313 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:313:5
+	str	r1, [sp, #60]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #82
+	movs	r1, #47
+	.loc	2 314 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:314:5
+	str	r1, [sp, #56]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #83
+	movs	r1, #63
+	.loc	2 315 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:315:5
+	str	r1, [sp, #12]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #12]                   @ 4-byte Reload
+	movs	r0, #84
+	.loc	2 316 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:316:5
+	bl	wr_reg
+	movs	r0, #85
+	str	r0, [sp, #52]                   @ 4-byte Spill
+	movs	r1, #62
+	.loc	2 317 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:317:5
+	bl	wr_reg
+	ldr	r1, [sp, #56]                   @ 4-byte Reload
+	movs	r0, #86
+	.loc	2 318 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:318:5
+	bl	wr_reg
+	movs	r0, #87
+	str	r0, [sp, #32]                   @ 4-byte Spill
+	movs	r1, #123
+	.loc	2 319 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:319:5
+	bl	wr_reg
+	movs	r0, #88
+	movs	r1, #9
+	.loc	2 320 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:320:5
+	bl	wr_reg
+	movs	r0, #89
+	movs	r1, #6
+	.loc	2 321 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:321:5
+	str	r1, [sp, #16]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r1, [sp, #16]                   @ 4-byte Reload
+	movs	r0, #90
+	.loc	2 322 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:322:5
+	bl	wr_reg
+	ldr	r1, [sp, #20]                   @ 4-byte Reload
+	movs	r0, #91
+	.loc	2 323 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:323:5
+	bl	wr_reg
+	movs	r0, #92
+	movs	r1, #29
+	.loc	2 324 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:324:5
+	bl	wr_reg
+	movs	r0, #93
+	movs	r1, #204
+	.loc	2 325 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:325:5
+	bl	wr_reg
+	ldr	r1, [sp, #24]                   @ 4-byte Reload
+	.loc	2 328 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:328:5
+	mov	r0, r1
+	bl	wr_reg
+	ldr	r1, [sp, #88]                   @ 4-byte Reload
+	movs	r0, #26
+	.loc	2 329 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:329:5
+	bl	wr_reg
+	ldr	r0, [sp, #28]                   @ 4-byte Reload
+	ldr	r1, [sp, #56]                   @ 4-byte Reload
+	.loc	2 330 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:330:5
+	bl	wr_reg
+	ldr	r1, [sp, #32]                   @ 4-byte Reload
+	movs	r0, #37
+	.loc	2 331 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:331:5
+	bl	wr_reg
+	movs	r0, #35
+	movs	r1, #136
+	.loc	2 332 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:332:5
+	str	r1, [sp, #40]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #24
+	movs	r1, #54
+	.loc	2 335 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:335:5
+	bl	wr_reg
+	ldr	r0, [sp, #36]                   @ 4-byte Reload
+	ldr	r1, [sp, #88]                   @ 4-byte Reload
+	.loc	2 336 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:336:5
+	bl	wr_reg
+	ldr	r0, [sp, #88]                   @ 4-byte Reload
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 337 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:337:5
+	bl	wr_reg
+	ldr	r1, [sp, #40]                   @ 4-byte Reload
+	movs	r0, #31
+	.loc	2 338 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:338:5
+	str	r0, [sp, #44]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #50
+	.loc	2 339 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:339:5
+	str	r0, [sp, #64]                   @ 4-byte Spill
+	bl	delay_ms
+	ldr	r0, [sp, #44]                   @ 4-byte Reload
+	movs	r1, #130
+	.loc	2 340 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:340:5
+	bl	wr_reg
+	movs	r0, #10
+	.loc	2 341 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:341:5
+	str	r0, [sp, #48]                   @ 4-byte Spill
+	bl	delay_ms
+	ldr	r0, [sp, #44]                   @ 4-byte Reload
+	movs	r1, #146
+	.loc	2 342 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:342:5
+	bl	wr_reg
+	ldr	r0, [sp, #48]                   @ 4-byte Reload
+	.loc	2 343 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:343:5
+	bl	delay_ms
+	ldr	r0, [sp, #44]                   @ 4-byte Reload
+	movs	r1, #210
+	.loc	2 344 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:344:5
+	bl	wr_reg
+	ldr	r0, [sp, #48]                   @ 4-byte Reload
+	.loc	2 345 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:345:5
+	bl	delay_ms
+	ldr	r1, [sp, #52]                   @ 4-byte Reload
+	movs	r0, #23
+	.loc	2 348 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:348:5
+	bl	wr_reg
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 349 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:349:5
+	mov	r0, r1
+	bl	wr_reg
+	ldr	r0, [sp, #56]                   @ 4-byte Reload
+	movs	r1, #17
+	.loc	2 352 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:352:5
+	str	r1, [sp, #92]                   @ 4-byte Spill
+	bl	wr_reg
+	ldr	r0, [sp, #60]                   @ 4-byte Reload
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 353 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:353:5
+	bl	wr_reg
+	ldr	r0, [sp, #64]                   @ 4-byte Reload
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 354 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:354:5
+	bl	wr_reg
+	ldr	r1, [sp, #68]                   @ 4-byte Reload
+	movs	r0, #40
+	.loc	2 357 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:357:5
+	str	r0, [sp, #72]                   @ 4-byte Spill
+	bl	wr_reg
+	movs	r0, #200
+	.loc	2 358 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:358:5
+	bl	delay_ms
+	ldr	r0, [sp, #72]                   @ 4-byte Reload
+	movs	r1, #60
+	.loc	2 359 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:359:5
+	bl	wr_reg
+	ldr	r0, [sp, #76]                   @ 4-byte Reload
+	movs	r1, #168
+	.loc	2 362 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:362:5
+	bl	wr_reg
+	ldr	r0, [sp, #80]                   @ 4-byte Reload
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 369 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:369:5
+	bl	wr_reg
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	movs	r0, #15
+	.loc	2 370 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:370:5
+	bl	wr_reg
+	ldr	r0, [sp, #84]                   @ 4-byte Reload
+	ldr	r1, [sp, #88]                   @ 4-byte Reload
+	.loc	2 371 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:371:5
+	bl	wr_reg
+	ldr	r0, [sp, #92]                   @ 4-byte Reload
+	ldr	r1, [sp, #96]                   @ 4-byte Reload
+	.loc	2 372 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:372:5
+	bl	wr_reg
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	movs	r0, #18
+	.loc	2 373 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:373:5
+	bl	wr_reg
+	ldr	r0, [sp, #100]                  @ 4-byte Reload
+	ldr	r1, [sp, #108]                  @ 4-byte Reload
+	.loc	2 374 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:374:5
+	bl	wr_reg
+	ldr	r2, [sp, #104]                  @ 4-byte Reload
+	ldr	r0, [sp, #108]                  @ 4-byte Reload
+	.loc	2 377 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:377:26
+	ldr	r1, [r2]
+	orr	r1, r1, #64
+	str	r1, [r2]
+	.loc	2 379 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:379:3
+	add	sp, #112
+	pop	{r7, pc}
+.Ltmp1:
+.Lfunc_end0:
+	.size	GLCD_Initialize, .Lfunc_end0-GLCD_Initialize
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.delay_ms,"ax",%progbits
+	.p2align	2                               @ -- Begin function delay_ms
+	.type	delay_ms,%function
+	.code	16                              @ @delay_ms
+	.thumb_func
+delay_ms:
+.Lfunc_begin1:
+	.loc	2 104 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:104:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+	str	r0, [sp]
+.Ltmp2:
+	.loc	2 115 12 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:115:12
+	movw	r0, :lower16:SystemCoreClock
+	movt	r0, :upper16:SystemCoreClock
+	ldr	r0, [r0]
+	movw	r1, #19923
+	movt	r1, #4194
+	.loc	2 115 27 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:115:27
+	umull	r1, r0, r0, r1
+	lsrs	r1, r0, #6
+	.loc	2 115 8                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:115:8
+	ldr	r0, [sp]
+	mul	r0, r0, r1
+	str	r0, [sp]
+	.loc	2 116 5 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:116:5
+	b	.LBB1_1
+.LBB1_1:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 116 14 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:116:14
+	ldr	r0, [sp]
+	subs	r1, r0, #1
+	str	r1, [sp]
+	.loc	2 116 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:116:5
+	cbz	r0, .LBB1_3
+	b	.LBB1_2
+.LBB1_2:                                @   in Loop: Header=BB1_1 Depth=1
+.Ltmp3:
+	.loc	2 116 20                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:116:20
+	nop
+.Ltmp4:
+	.loc	2 116 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:116:5
+	b	.LBB1_1
+.LBB1_3:
+	.loc	2 118 1 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:118:1
+	add	sp, #4
+	bx	lr
+.Ltmp5:
+.Lfunc_end1:
+	.size	delay_ms, .Lfunc_end1-delay_ms
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_reg,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_reg
+	.type	wr_reg,%function
+	.code	16                              @ @wr_reg
+	.thumb_func
+wr_reg:
+.Lfunc_begin2:
+	.loc	2 201 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:201:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+                                        @ kill: def $r2 killed $r1
+                                        @ kill: def $r2 killed $r0
+	strb.w	r0, [sp, #7]
+	strh.w	r1, [sp, #4]
+.Ltmp6:
+	.loc	2 202 10 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:202:10
+	ldrb.w	r0, [sp, #7]
+	.loc	2 202 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:202:3
+	bl	wr_cmd
+	.loc	2 203 10 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:203:10
+	ldrh.w	r0, [sp, #4]
+	.loc	2 203 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:203:3
+	bl	wr_dat
+	.loc	2 204 1 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:204:1
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp7:
+.Lfunc_end2:
+	.size	wr_reg, .Lfunc_end2-wr_reg
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_Uninitialize,"ax",%progbits
+	.hidden	GLCD_Uninitialize               @ -- Begin function GLCD_Uninitialize
+	.globl	GLCD_Uninitialize
+	.p2align	2
+	.type	GLCD_Uninitialize,%function
+	.code	16                              @ @GLCD_Uninitialize
+	.thumb_func
+GLCD_Uninitialize:
+.Lfunc_begin3:
+	.loc	2 389 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:389:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	movs	r0, #0
+.Ltmp8:
+	.loc	2 391 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:391:3
+	bx	lr
+.Ltmp9:
+.Lfunc_end3:
+	.size	GLCD_Uninitialize, .Lfunc_end3-GLCD_Uninitialize
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_SetForegroundColor,"ax",%progbits
+	.hidden	GLCD_SetForegroundColor         @ -- Begin function GLCD_SetForegroundColor
+	.globl	GLCD_SetForegroundColor
+	.p2align	2
+	.type	GLCD_SetForegroundColor,%function
+	.code	16                              @ @GLCD_SetForegroundColor
+	.thumb_func
+GLCD_SetForegroundColor:
+.Lfunc_begin4:
+	.loc	2 402 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:402:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+	str	r0, [sp]
+.Ltmp10:
+	.loc	2 403 32 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:403:32
+	ldr	r0, [sp]
+	.loc	2 403 20 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:403:20
+	movw	r1, :lower16:foreground_color
+	movt	r1, :upper16:foreground_color
+	strh	r0, [r1]
+	movs	r0, #0
+	.loc	2 404 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:404:3
+	add	sp, #4
+	bx	lr
+.Ltmp11:
+.Lfunc_end4:
+	.size	GLCD_SetForegroundColor, .Lfunc_end4-GLCD_SetForegroundColor
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_SetBackgroundColor,"ax",%progbits
+	.hidden	GLCD_SetBackgroundColor         @ -- Begin function GLCD_SetBackgroundColor
+	.globl	GLCD_SetBackgroundColor
+	.p2align	2
+	.type	GLCD_SetBackgroundColor,%function
+	.code	16                              @ @GLCD_SetBackgroundColor
+	.thumb_func
+GLCD_SetBackgroundColor:
+.Lfunc_begin5:
+	.loc	2 415 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:415:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+	str	r0, [sp]
+.Ltmp12:
+	.loc	2 416 32 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:416:32
+	ldr	r0, [sp]
+	.loc	2 416 20 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:416:20
+	movw	r1, :lower16:background_color
+	movt	r1, :upper16:background_color
+	strh	r0, [r1]
+	movs	r0, #0
+	.loc	2 417 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:417:3
+	add	sp, #4
+	bx	lr
+.Ltmp13:
+.Lfunc_end5:
+	.size	GLCD_SetBackgroundColor, .Lfunc_end5-GLCD_SetBackgroundColor
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_ClearScreen,"ax",%progbits
+	.hidden	GLCD_ClearScreen                @ -- Begin function GLCD_ClearScreen
+	.globl	GLCD_ClearScreen
+	.p2align	2
+	.type	GLCD_ClearScreen,%function
+	.code	16                              @ @GLCD_ClearScreen
+	.thumb_func
+GLCD_ClearScreen:
+.Lfunc_begin6:
+	.loc	2 427 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:427:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+	movs	r1, #0
+	str	r1, [sp]                        @ 4-byte Spill
+	mov.w	r2, #320
+	movs	r3, #240
+.Ltmp14:
+	.loc	2 430 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:430:3
+	mov	r0, r1
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 432 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:432:3
+	bl	wr_cmd
+	.loc	2 433 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:433:3
+	bl	wr_dat_start
+	ldr	r0, [sp]                        @ 4-byte Reload
+.Ltmp15:
+	.loc	2 434 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:10
+	str	r0, [sp, #4]
+	.loc	2 434 8 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:8
+	b	.LBB6_1
+.LBB6_1:                                @ =>This Inner Loop Header: Depth=1
+.Ltmp16:
+	.loc	2 434 15                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:15
+	ldr	r0, [sp, #4]
+.Ltmp17:
+	.loc	2 434 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:3
+	lsrs	r0, r0, #10
+	cmp	r0, #74
+	bhi	.LBB6_4
+	b	.LBB6_2
+.LBB6_2:                                @   in Loop: Header=BB6_1 Depth=1
+.Ltmp18:
+	.loc	2 435 17 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:435:17
+	movw	r0, :lower16:background_color
+	movt	r0, :upper16:background_color
+	ldrh	r0, [r0]
+	.loc	2 435 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:435:5
+	bl	wr_dat_only
+	.loc	2 436 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:436:3
+	b	.LBB6_3
+.Ltmp19:
+.LBB6_3:                                @   in Loop: Header=BB6_1 Depth=1
+	.loc	2 434 48                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:48
+	ldr	r0, [sp, #4]
+	adds	r0, #1
+	str	r0, [sp, #4]
+	.loc	2 434 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:434:3
+	b	.LBB6_1
+.Ltmp20:
+.LBB6_4:
+	.loc	2 437 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:437:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 438 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:438:3
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp21:
+.Lfunc_end6:
+	.size	GLCD_ClearScreen, .Lfunc_end6-GLCD_ClearScreen
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_SetWindow,"ax",%progbits
+	.p2align	2                               @ -- Begin function GLCD_SetWindow
+	.type	GLCD_SetWindow,%function
+	.code	16                              @ @GLCD_SetWindow
+	.thumb_func
+GLCD_SetWindow:
+.Lfunc_begin7:
+	.loc	2 226 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:226:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#24
+	sub	sp, #24
+	.cfi_def_cfa_offset 32
+	str	r0, [sp, #20]
+	str	r1, [sp, #16]
+	str	r2, [sp, #12]
+	str	r3, [sp, #8]
+.Ltmp22:
+	.loc	2 230 10 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:230:10
+	ldr	r0, [sp, #20]
+	.loc	2 230 12 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:230:12
+	ldr	r1, [sp, #12]
+	.loc	2 230 11                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:230:11
+	add	r0, r1
+	.loc	2 230 13                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:230:13
+	subs	r0, #1
+	.loc	2 230 8                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:230:8
+	str	r0, [sp, #4]
+	.loc	2 231 10 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:231:10
+	ldr	r0, [sp, #16]
+	.loc	2 231 12 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:231:12
+	ldr	r1, [sp, #8]
+	.loc	2 231 11                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:231:11
+	add	r0, r1
+	.loc	2 231 13                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:231:13
+	subs	r0, #1
+	.loc	2 231 8                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:231:8
+	str	r0, [sp]
+	.loc	2 233 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:233:29
+	ldrh.w	r1, [sp, #21]
+	movs	r0, #2
+	.loc	2 233 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:233:5
+	bl	wr_reg
+	.loc	2 234 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:234:29
+	ldrb.w	r1, [sp, #20]
+	movs	r0, #3
+	.loc	2 234 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:234:5
+	bl	wr_reg
+	.loc	2 235 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:235:29
+	ldrh.w	r1, [sp, #5]
+	movs	r0, #4
+	.loc	2 235 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:235:5
+	bl	wr_reg
+	.loc	2 236 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:236:29
+	ldrb.w	r1, [sp, #4]
+	movs	r0, #5
+	.loc	2 236 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:236:5
+	bl	wr_reg
+	.loc	2 238 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:238:29
+	ldrh.w	r1, [sp, #17]
+	movs	r0, #6
+	.loc	2 238 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:238:5
+	bl	wr_reg
+	.loc	2 239 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:239:29
+	ldrb.w	r1, [sp, #16]
+	movs	r0, #7
+	.loc	2 239 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:239:5
+	bl	wr_reg
+	.loc	2 240 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:240:29
+	ldrh.w	r1, [sp, #1]
+	movs	r0, #8
+	.loc	2 240 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:240:5
+	bl	wr_reg
+	.loc	2 241 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:241:29
+	ldrb.w	r1, [sp]
+	movs	r0, #9
+	.loc	2 241 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:241:5
+	bl	wr_reg
+	.loc	2 243 1 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:243:1
+	add	sp, #24
+	pop	{r7, pc}
+.Ltmp23:
+.Lfunc_end7:
+	.size	GLCD_SetWindow, .Lfunc_end7-GLCD_SetWindow
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_cmd,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_cmd
+	.type	wr_cmd,%function
+	.code	16                              @ @wr_cmd
+	.thumb_func
+wr_cmd:
+.Lfunc_begin8:
+	.loc	2 137 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:137:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+                                        @ kill: def $r1 killed $r0
+	strb.w	r0, [sp, #7]
+	movw	r1, #8268
+	movt	r1, #16432
+.Ltmp24:
+	.loc	2 138 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:138:3
+	str	r1, [sp]                        @ 4-byte Spill
+	ldr	r0, [r1]
+	bic	r0, r0, #1
+	str	r0, [r1]
+	movs	r0, #112
+	.loc	2 139 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:139:3
+	bl	spi_tran
+	movs	r0, #0
+	.loc	2 140 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:140:3
+	bl	spi_tran
+	.loc	2 141 12                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:141:12
+	ldrb.w	r0, [sp, #7]
+	.loc	2 141 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:141:3
+	bl	spi_tran
+	ldr	r1, [sp]                        @ 4-byte Reload
+	.loc	2 142 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:142:3
+	ldr	r0, [r1]
+	orr	r0, r0, #1
+	str	r0, [r1]
+	.loc	2 143 1 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:143:1
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp25:
+.Lfunc_end8:
+	.size	wr_cmd, .Lfunc_end8-wr_cmd
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_dat_start,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_dat_start
+	.type	wr_dat_start,%function
+	.code	16                              @ @wr_dat_start
+	.thumb_func
+wr_dat_start:
+.Lfunc_begin9:
+	.loc	2 162 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:162:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	movw	r1, #8268
+	movt	r1, #16432
+.Ltmp26:
+	.loc	2 163 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:163:3
+	ldr	r0, [r1]
+	bic	r0, r0, #1
+	str	r0, [r1]
+	movs	r0, #114
+	.loc	2 164 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:164:3
+	bl	spi_tran
+	.loc	2 165 1 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:165:1
+	pop	{r7, pc}
+.Ltmp27:
+.Lfunc_end9:
+	.size	wr_dat_start, .Lfunc_end9-wr_dat_start
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_dat_only,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_dat_only
+	.type	wr_dat_only,%function
+	.code	16                              @ @wr_dat_only
+	.thumb_func
+wr_dat_only:
+.Lfunc_begin10:
+	.loc	2 180 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:180:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+                                        @ kill: def $r1 killed $r0
+	strh.w	r0, [sp, #6]
+.Ltmp28:
+	.loc	2 181 13 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:181:13
+	ldrb.w	r0, [sp, #7]
+	.loc	2 181 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:181:3
+	bl	spi_tran
+	.loc	2 182 13 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:182:13
+	ldrb.w	r0, [sp, #6]
+	.loc	2 182 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:182:3
+	bl	spi_tran
+	.loc	2 183 1 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:183:1
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp29:
+.Lfunc_end10:
+	.size	wr_dat_only, .Lfunc_end10-wr_dat_only
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_dat_stop,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_dat_stop
+	.type	wr_dat_stop,%function
+	.code	16                              @ @wr_dat_stop
+	.thumb_func
+wr_dat_stop:
+.Lfunc_begin11:
+	.loc	2 171 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:171:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	movw	r1, #8268
+	movt	r1, #16432
+.Ltmp30:
+	.loc	2 172 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:172:3
+	ldr	r0, [r1]
+	orr	r0, r0, #1
+	str	r0, [r1]
+	.loc	2 173 1                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:173:1
+	bx	lr
+.Ltmp31:
+.Lfunc_end11:
+	.size	wr_dat_stop, .Lfunc_end11-wr_dat_stop
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_SetFont,"ax",%progbits
+	.hidden	GLCD_SetFont                    @ -- Begin function GLCD_SetFont
+	.globl	GLCD_SetFont
+	.p2align	2
+	.type	GLCD_SetFont,%function
+	.code	16                              @ @GLCD_SetFont
+	.thumb_func
+GLCD_SetFont:
+.Lfunc_begin12:
+	.loc	2 449 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:449:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+	str	r0, [sp]
+.Ltmp32:
+	.loc	2 450 17 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:450:17
+	ldr	r0, [sp]
+	.loc	2 450 15 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:450:15
+	movw	r1, :lower16:active_font
+	movt	r1, :upper16:active_font
+	str	r0, [r1]
+	movs	r0, #0
+	.loc	2 451 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:451:3
+	add	sp, #4
+	bx	lr
+.Ltmp33:
+.Lfunc_end12:
+	.size	GLCD_SetFont, .Lfunc_end12-GLCD_SetFont
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawPixel,"ax",%progbits
+	.hidden	GLCD_DrawPixel                  @ -- Begin function GLCD_DrawPixel
+	.globl	GLCD_DrawPixel
+	.p2align	2
+	.type	GLCD_DrawPixel,%function
+	.code	16                              @ @GLCD_DrawPixel
+	.thumb_func
+GLCD_DrawPixel:
+.Lfunc_begin13:
+	.loc	2 463 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:463:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+	str	r0, [sp, #4]
+	str	r1, [sp]
+.Ltmp34:
+	.loc	2 469 29 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:469:29
+	ldrh.w	r1, [sp, #5]
+	movs	r0, #2
+	.loc	2 469 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:469:5
+	bl	wr_reg
+	.loc	2 470 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:470:29
+	ldrb.w	r1, [sp, #4]
+	movs	r0, #3
+	.loc	2 470 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:470:5
+	bl	wr_reg
+	.loc	2 471 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:471:29
+	ldrh.w	r1, [sp, #5]
+	movs	r0, #4
+	.loc	2 471 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:471:5
+	bl	wr_reg
+	.loc	2 472 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:472:29
+	ldrb.w	r1, [sp, #4]
+	movs	r0, #5
+	.loc	2 472 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:472:5
+	bl	wr_reg
+	.loc	2 474 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:474:29
+	ldrh.w	r1, [sp, #1]
+	movs	r0, #6
+	.loc	2 474 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:474:5
+	bl	wr_reg
+	.loc	2 475 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:475:29
+	ldrb.w	r1, [sp]
+	movs	r0, #7
+	.loc	2 475 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:475:5
+	bl	wr_reg
+	.loc	2 476 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:476:29
+	ldrh.w	r1, [sp, #1]
+	movs	r0, #8
+	.loc	2 476 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:476:5
+	bl	wr_reg
+	.loc	2 477 29 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:477:29
+	ldrb.w	r1, [sp]
+	movs	r0, #9
+	.loc	2 477 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:477:5
+	bl	wr_reg
+	movs	r0, #34
+	.loc	2 480 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:480:3
+	bl	wr_cmd
+	.loc	2 481 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:481:10
+	movw	r0, :lower16:foreground_color
+	movt	r0, :upper16:foreground_color
+	ldrh	r0, [r0]
+	.loc	2 481 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:481:3
+	bl	wr_dat
+	movs	r0, #0
+	.loc	2 483 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:483:3
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp35:
+.Lfunc_end13:
+	.size	GLCD_DrawPixel, .Lfunc_end13-GLCD_DrawPixel
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.wr_dat,"ax",%progbits
+	.p2align	2                               @ -- Begin function wr_dat
+	.type	wr_dat,%function
+	.code	16                              @ @wr_dat
+	.thumb_func
+wr_dat:
+.Lfunc_begin14:
+	.loc	2 150 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:150:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+                                        @ kill: def $r1 killed $r0
+	strh.w	r0, [sp, #6]
+	movw	r1, #8268
+	movt	r1, #16432
+.Ltmp36:
+	.loc	2 151 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:151:3
+	str	r1, [sp]                        @ 4-byte Spill
+	ldr	r0, [r1]
+	bic	r0, r0, #1
+	str	r0, [r1]
+	movs	r0, #114
+	.loc	2 152 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:152:3
+	bl	spi_tran
+	.loc	2 153 13                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:153:13
+	ldrb.w	r0, [sp, #7]
+	.loc	2 153 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:153:3
+	bl	spi_tran
+	.loc	2 154 13 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:154:13
+	ldrb.w	r0, [sp, #6]
+	.loc	2 154 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:154:3
+	bl	spi_tran
+	ldr	r1, [sp]                        @ 4-byte Reload
+	.loc	2 155 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:155:3
+	ldr	r0, [r1]
+	orr	r0, r0, #1
+	str	r0, [r1]
+	.loc	2 156 1 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:156:1
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp37:
+.Lfunc_end14:
+	.size	wr_dat, .Lfunc_end14-wr_dat
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawHLine,"ax",%progbits
+	.hidden	GLCD_DrawHLine                  @ -- Begin function GLCD_DrawHLine
+	.globl	GLCD_DrawHLine
+	.p2align	2
+	.type	GLCD_DrawHLine,%function
+	.code	16                              @ @GLCD_DrawHLine
+	.thumb_func
+GLCD_DrawHLine:
+.Lfunc_begin15:
+	.loc	2 496 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:496:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 24
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+.Ltmp38:
+	.loc	2 501 18 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:501:18
+	ldr	r0, [sp, #12]
+	.loc	2 501 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:501:21
+	ldr	r1, [sp, #8]
+	.loc	2 501 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:501:24
+	ldr	r2, [sp, #4]
+	movs	r3, #1
+	.loc	2 501 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:501:3
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 502 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:502:3
+	bl	wr_cmd
+	.loc	2 503 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:503:3
+	bl	wr_dat_start
+	.loc	2 505 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:505:3
+	b	.LBB15_1
+.LBB15_1:                               @ =>This Inner Loop Header: Depth=1
+	.loc	2 505 16 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:505:16
+	ldr	r0, [sp, #4]
+	subs	r1, r0, #1
+	str	r1, [sp, #4]
+	.loc	2 505 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:505:3
+	cbz	r0, .LBB15_3
+	b	.LBB15_2
+.LBB15_2:                               @   in Loop: Header=BB15_1 Depth=1
+.Ltmp39:
+	.loc	2 506 17 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:506:17
+	movw	r0, :lower16:foreground_color
+	movt	r0, :upper16:foreground_color
+	ldrh	r0, [r0]
+	.loc	2 506 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:506:5
+	bl	wr_dat_only
+.Ltmp40:
+	.loc	2 505 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:505:3
+	b	.LBB15_1
+.LBB15_3:
+	.loc	2 508 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:508:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 509 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:509:3
+	add	sp, #16
+	pop	{r7, pc}
+.Ltmp41:
+.Lfunc_end15:
+	.size	GLCD_DrawHLine, .Lfunc_end15-GLCD_DrawHLine
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawVLine,"ax",%progbits
+	.hidden	GLCD_DrawVLine                  @ -- Begin function GLCD_DrawVLine
+	.globl	GLCD_DrawVLine
+	.p2align	2
+	.type	GLCD_DrawVLine,%function
+	.code	16                              @ @GLCD_DrawVLine
+	.thumb_func
+GLCD_DrawVLine:
+.Lfunc_begin16:
+	.loc	2 522 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:522:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 24
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+.Ltmp42:
+	.loc	2 527 18 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:527:18
+	ldr	r0, [sp, #12]
+	.loc	2 527 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:527:21
+	ldr	r1, [sp, #8]
+	.loc	2 527 27                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:527:27
+	ldr	r3, [sp, #4]
+	movs	r2, #1
+	.loc	2 527 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:527:3
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 528 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:528:3
+	bl	wr_cmd
+	.loc	2 529 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:529:3
+	bl	wr_dat_start
+	.loc	2 531 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:531:3
+	b	.LBB16_1
+.LBB16_1:                               @ =>This Inner Loop Header: Depth=1
+	.loc	2 531 16 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:531:16
+	ldr	r0, [sp, #4]
+	subs	r1, r0, #1
+	str	r1, [sp, #4]
+	.loc	2 531 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:531:3
+	cbz	r0, .LBB16_3
+	b	.LBB16_2
+.LBB16_2:                               @   in Loop: Header=BB16_1 Depth=1
+.Ltmp43:
+	.loc	2 532 17 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:532:17
+	movw	r0, :lower16:foreground_color
+	movt	r0, :upper16:foreground_color
+	ldrh	r0, [r0]
+	.loc	2 532 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:532:5
+	bl	wr_dat_only
+.Ltmp44:
+	.loc	2 531 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:531:3
+	b	.LBB16_1
+.LBB16_3:
+	.loc	2 534 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:534:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 535 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:535:3
+	add	sp, #16
+	pop	{r7, pc}
+.Ltmp45:
+.Lfunc_end16:
+	.size	GLCD_DrawVLine, .Lfunc_end16-GLCD_DrawVLine
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawRectangle,"ax",%progbits
+	.hidden	GLCD_DrawRectangle              @ -- Begin function GLCD_DrawRectangle
+	.globl	GLCD_DrawRectangle
+	.p2align	2
+	.type	GLCD_DrawRectangle,%function
+	.code	16                              @ @GLCD_DrawRectangle
+	.thumb_func
+GLCD_DrawRectangle:
+.Lfunc_begin17:
+	.loc	2 549 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:549:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 24
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+	str	r3, [sp]
+.Ltmp46:
+	.loc	2 551 19 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:551:19
+	ldr	r0, [sp, #12]
+	.loc	2 551 30 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:551:30
+	ldr	r1, [sp, #8]
+	.loc	2 551 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:551:42
+	ldr	r2, [sp, #4]
+	.loc	2 551 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:551:3
+	bl	GLCD_DrawHLine
+	.loc	2 552 19 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:19
+	ldr	r0, [sp, #12]
+	.loc	2 552 30 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:30
+	ldr	r1, [sp, #8]
+	.loc	2 552 34                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:34
+	ldr	r2, [sp]
+	.loc	2 552 32                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:32
+	add	r1, r2
+	.loc	2 552 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:42
+	ldr	r2, [sp, #4]
+	.loc	2 552 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:552:3
+	bl	GLCD_DrawHLine
+	.loc	2 553 19 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:553:19
+	ldr	r0, [sp, #12]
+	.loc	2 553 30 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:553:30
+	ldr	r1, [sp, #8]
+	.loc	2 553 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:553:42
+	ldr	r2, [sp]
+	.loc	2 553 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:553:3
+	bl	GLCD_DrawVLine
+	.loc	2 554 19 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:19
+	ldr	r0, [sp, #12]
+	.loc	2 554 23 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:23
+	ldr	r1, [sp, #4]
+	.loc	2 554 21                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:21
+	add	r0, r1
+	.loc	2 554 30                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:30
+	ldr	r1, [sp, #8]
+	.loc	2 554 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:42
+	ldr	r2, [sp]
+	.loc	2 554 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:554:3
+	bl	GLCD_DrawVLine
+	movs	r0, #0
+	.loc	2 556 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:556:3
+	add	sp, #16
+	pop	{r7, pc}
+.Ltmp47:
+.Lfunc_end17:
+	.size	GLCD_DrawRectangle, .Lfunc_end17-GLCD_DrawRectangle
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawChar,"ax",%progbits
+	.hidden	GLCD_DrawChar                   @ -- Begin function GLCD_DrawChar
+	.globl	GLCD_DrawChar
+	.p2align	2
+	.type	GLCD_DrawChar,%function
+	.code	16                              @ @GLCD_DrawChar
+	.thumb_func
+GLCD_DrawChar:
+.Lfunc_begin18:
+	.loc	2 569 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:569:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#40
+	sub	sp, #40
+	.cfi_def_cfa_offset 48
+	str	r0, [sp, #32]
+	str	r1, [sp, #28]
+	str	r2, [sp, #24]
+.Ltmp48:
+	.loc	2 578 7 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:578:7
+	movw	r0, :lower16:active_font
+	movt	r0, :upper16:active_font
+	ldr	r0, [r0]
+.Ltmp49:
+	.loc	2 578 7 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:578:7
+	cbnz	r0, .LBB18_2
+	b	.LBB18_1
+.LBB18_1:
+	.loc	2 0 7                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:7
+	mov.w	r0, #-1
+.Ltmp50:
+	.loc	2 578 28                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:578:28
+	str	r0, [sp, #36]
+	b	.LBB18_17
+.Ltmp51:
+.LBB18_2:
+	.loc	2 580 16 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:580:16
+	movw	r2, :lower16:active_font
+	movt	r2, :upper16:active_font
+	ldr	r0, [r2]
+	.loc	2 580 29 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:580:29
+	ldr	r1, [r0, #4]
+	.loc	2 580 13                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:580:13
+	ldr	r0, [sp, #24]
+	subs	r0, r0, r1
+	str	r0, [sp, #24]
+	.loc	2 581 17 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:581:17
+	ldr	r0, [r2]
+	.loc	2 581 30 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:581:30
+	ldrh	r0, [r0]
+	.loc	2 581 36                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:581:36
+	adds	r0, #7
+	.loc	2 581 40                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:581:40
+	lsrs	r0, r0, #3
+	.loc	2 581 14                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:581:14
+	str	r0, [sp, #12]
+	.loc	2 582 16 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:16
+	ldr	r1, [r2]
+	.loc	2 582 29 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:29
+	ldr	r3, [r1, #12]
+	.loc	2 582 49                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:49
+	ldr	r0, [sp, #24]
+	.loc	2 582 54                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:54
+	ldr.w	r12, [sp, #12]
+	.loc	2 582 52                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:52
+	mul	r0, r0, r12
+	.loc	2 582 72                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:72
+	ldrh	r1, [r1, #2]
+	.loc	2 582 36                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:36
+	mla	r0, r0, r1, r3
+	.loc	2 582 14                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:582:14
+	str	r0, [sp, #8]
+	.loc	2 584 18 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:18
+	ldr	r0, [sp, #32]
+	.loc	2 584 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:21
+	ldr	r1, [sp, #28]
+	.loc	2 584 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:24
+	ldr	r3, [r2]
+	.loc	2 584 37                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:37
+	ldrh	r2, [r3]
+	.loc	2 584 57                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:57
+	ldrh	r3, [r3, #2]
+	.loc	2 584 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:584:3
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 586 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:586:3
+	bl	wr_cmd
+	.loc	2 587 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:587:3
+	bl	wr_dat_start
+	movs	r0, #0
+.Ltmp52:
+	.loc	2 589 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:10
+	str	r0, [sp, #20]
+	.loc	2 589 8 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:8
+	b	.LBB18_3
+.LBB18_3:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB18_5 Depth 2
+.Ltmp53:
+	.loc	2 589 15                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:15
+	ldr	r0, [sp, #20]
+	.loc	2 589 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:19
+	movw	r1, :lower16:active_font
+	movt	r1, :upper16:active_font
+	ldr	r1, [r1]
+	.loc	2 589 32                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:32
+	ldrh	r1, [r1, #2]
+.Ltmp54:
+	.loc	2 589 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:3
+	cmp	r0, r1
+	bhs	.LBB18_16
+	b	.LBB18_4
+.LBB18_4:                               @   in Loop: Header=BB18_3 Depth=1
+	.loc	2 0 3                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movs	r0, #0
+.Ltmp55:
+	.loc	2 590 12 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:12
+	str	r0, [sp, #16]
+	.loc	2 590 10 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:10
+	b	.LBB18_5
+.LBB18_5:                               @   Parent Loop BB18_3 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp56:
+	.loc	2 590 17                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:17
+	ldr	r0, [sp, #16]
+	.loc	2 590 21                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:21
+	movw	r1, :lower16:active_font
+	movt	r1, :upper16:active_font
+	ldr	r1, [r1]
+	.loc	2 590 34                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:34
+	ldrh	r1, [r1]
+.Ltmp57:
+	.loc	2 590 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:5
+	cmp	r0, r1
+	bhs	.LBB18_14
+	b	.LBB18_6
+.LBB18_6:                               @   in Loop: Header=BB18_5 Depth=2
+.Ltmp58:
+	.loc	2 591 22 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:22
+	ldr	r0, [sp, #8]
+	.loc	2 591 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:21
+	ldrb	r0, [r0]
+	.loc	2 591 37                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:37
+	ldr	r1, [sp, #16]
+	.loc	2 591 39                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:39
+	and	r1, r1, #7
+	.loc	2 591 33                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:33
+	lsrs	r0, r1
+	.loc	2 591 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:19
+	lsls	r0, r0, #31
+	cbz	r0, .LBB18_8
+	b	.LBB18_7
+.LBB18_7:                               @   in Loop: Header=BB18_5 Depth=2
+	.loc	2 591 52                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:52
+	movw	r0, :lower16:foreground_color
+	movt	r0, :upper16:foreground_color
+	ldrh	r0, [r0]
+	.loc	2 591 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:19
+	str	r0, [sp, #4]                    @ 4-byte Spill
+	b	.LBB18_9
+.LBB18_8:                               @   in Loop: Header=BB18_5 Depth=2
+	.loc	2 591 71                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:71
+	movw	r0, :lower16:background_color
+	movt	r0, :upper16:background_color
+	ldrh	r0, [r0]
+	.loc	2 591 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:19
+	str	r0, [sp, #4]                    @ 4-byte Spill
+	b	.LBB18_9
+.LBB18_9:                               @   in Loop: Header=BB18_5 Depth=2
+	ldr	r0, [sp, #4]                    @ 4-byte Reload
+	.loc	2 591 7                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:591:7
+	uxth	r0, r0
+	bl	wr_dat_only
+.Ltmp59:
+	.loc	2 592 13 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:13
+	ldr	r0, [sp, #16]
+	.loc	2 592 15 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:15
+	and	r0, r0, #7
+	.loc	2 592 26                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:26
+	cmp	r0, #7
+	bne	.LBB18_12
+	b	.LBB18_10
+.LBB18_10:                              @   in Loop: Header=BB18_5 Depth=2
+	.loc	2 592 30                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:30
+	ldr	r0, [sp, #16]
+	.loc	2 592 36                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:36
+	movw	r1, :lower16:active_font
+	movt	r1, :upper16:active_font
+	ldr	r1, [r1]
+	.loc	2 592 49                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:49
+	ldrh	r1, [r1]
+	.loc	2 592 55                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:55
+	subs	r1, #1
+.Ltmp60:
+	.loc	2 592 11                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:11
+	cmp	r0, r1
+	beq	.LBB18_12
+	b	.LBB18_11
+.LBB18_11:                              @   in Loop: Header=BB18_5 Depth=2
+.Ltmp61:
+	.loc	2 592 72                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:72
+	ldr	r0, [sp, #8]
+	adds	r0, #1
+	str	r0, [sp, #8]
+	.loc	2 592 62                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:592:62
+	b	.LBB18_12
+.Ltmp62:
+.LBB18_12:                              @   in Loop: Header=BB18_5 Depth=2
+	.loc	2 593 5 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:593:5
+	b	.LBB18_13
+.Ltmp63:
+.LBB18_13:                              @   in Loop: Header=BB18_5 Depth=2
+	.loc	2 590 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:42
+	ldr	r0, [sp, #16]
+	adds	r0, #1
+	str	r0, [sp, #16]
+	.loc	2 590 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:590:5
+	b	.LBB18_5
+.Ltmp64:
+.LBB18_14:                              @   in Loop: Header=BB18_3 Depth=1
+	.loc	2 594 15 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:594:15
+	ldr	r0, [sp, #8]
+	adds	r0, #1
+	str	r0, [sp, #8]
+	.loc	2 595 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:595:3
+	b	.LBB18_15
+.Ltmp65:
+.LBB18_15:                              @   in Loop: Header=BB18_3 Depth=1
+	.loc	2 589 41                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:41
+	ldr	r0, [sp, #20]
+	adds	r0, #1
+	str	r0, [sp, #20]
+	.loc	2 589 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:589:3
+	b	.LBB18_3
+.Ltmp66:
+.LBB18_16:
+	.loc	2 596 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:596:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 597 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:597:3
+	str	r0, [sp, #36]
+	b	.LBB18_17
+.LBB18_17:
+	.loc	2 598 1                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:598:1
+	ldr	r0, [sp, #36]
+	.loc	2 598 1 epilogue_begin is_stmt 0 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:598:1
+	add	sp, #40
+	pop	{r7, pc}
+.Ltmp67:
+.Lfunc_end18:
+	.size	GLCD_DrawChar, .Lfunc_end18-GLCD_DrawChar
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawString,"ax",%progbits
+	.hidden	GLCD_DrawString                 @ -- Begin function GLCD_DrawString
+	.globl	GLCD_DrawString
+	.p2align	2
+	.type	GLCD_DrawString,%function
+	.code	16                              @ @GLCD_DrawString
+	.thumb_func
+GLCD_DrawString:
+.Lfunc_begin19:
+	.loc	2 610 0 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:610:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 24
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+.Ltmp68:
+	.loc	2 612 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:3
+	b	.LBB19_1
+.LBB19_1:                               @ =>This Inner Loop Header: Depth=1
+	.loc	2 612 11 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:11
+	ldr	r0, [sp, #4]
+	.loc	2 612 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:10
+	ldrb	r0, [r0]
+	.loc	2 612 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:3
+	cbz	r0, .LBB19_3
+	b	.LBB19_2
+.LBB19_2:                               @   in Loop: Header=BB19_1 Depth=1
+.Ltmp69:
+	.loc	2 612 32                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:32
+	ldr	r0, [sp, #12]
+	.loc	2 612 35                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:35
+	ldr	r1, [sp, #8]
+	.loc	2 612 42                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:42
+	ldr	r2, [sp, #4]
+	adds	r3, r2, #1
+	str	r3, [sp, #4]
+	.loc	2 612 38                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:38
+	ldrb	r2, [r2]
+	.loc	2 612 18                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:18
+	bl	GLCD_DrawChar
+	.loc	2 612 52                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:52
+	movw	r0, :lower16:active_font
+	movt	r0, :upper16:active_font
+	ldr	r0, [r0]
+	.loc	2 612 65                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:65
+	ldrh	r1, [r0]
+	.loc	2 612 49                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:49
+	ldr	r0, [sp, #12]
+	add	r0, r1
+	str	r0, [sp, #12]
+.Ltmp70:
+	.loc	2 612 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:612:3
+	b	.LBB19_1
+.LBB19_3:
+	.loc	2 0 3                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movs	r0, #0
+	.loc	2 614 3 epilogue_begin is_stmt 1 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:614:3
+	add	sp, #16
+	pop	{r7, pc}
+.Ltmp71:
+.Lfunc_end19:
+	.size	GLCD_DrawString, .Lfunc_end19-GLCD_DrawString
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawBargraph,"ax",%progbits
+	.hidden	GLCD_DrawBargraph               @ -- Begin function GLCD_DrawBargraph
+	.globl	GLCD_DrawBargraph
+	.p2align	2
+	.type	GLCD_DrawBargraph,%function
+	.code	16                              @ @GLCD_DrawBargraph
+	.thumb_func
+GLCD_DrawBargraph:
+.Lfunc_begin20:
+	.loc	2 630 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:630:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#24
+	sub	sp, #24
+	.cfi_def_cfa_offset 32
+	ldr.w	r12, [sp, #32]
+	str	r0, [sp, #20]
+	str	r1, [sp, #16]
+	str	r2, [sp, #12]
+	str	r3, [sp, #8]
+.Ltmp72:
+	.loc	2 633 10 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:633:10
+	ldr	r0, [sp, #32]
+	.loc	2 633 16 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:633:16
+	ldr	r1, [sp, #12]
+	.loc	2 633 14                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:633:14
+	mul	r0, r0, r1
+	movw	r1, #34079
+	movt	r1, #20971
+	.loc	2 633 23                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:633:23
+	umull	r1, r0, r0, r1
+	lsrs	r0, r0, #5
+	.loc	2 633 7                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:633:7
+	str	r0, [sp, #32]
+	.loc	2 639 18 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:639:18
+	ldr	r0, [sp, #20]
+	.loc	2 639 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:639:21
+	ldr	r1, [sp, #16]
+	.loc	2 639 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:639:24
+	ldr	r2, [sp, #12]
+	.loc	2 639 31                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:639:31
+	ldr	r3, [sp, #8]
+	.loc	2 639 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:639:3
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 641 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:641:3
+	bl	wr_cmd
+	.loc	2 642 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:642:3
+	bl	wr_dat_start
+	movs	r0, #0
+.Ltmp73:
+	.loc	2 643 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:10
+	str	r0, [sp, #4]
+	.loc	2 643 8 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:8
+	b	.LBB20_1
+.LBB20_1:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB20_3 Depth 2
+.Ltmp74:
+	.loc	2 643 15                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:15
+	ldr	r0, [sp, #4]
+	.loc	2 643 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:19
+	ldr	r1, [sp, #8]
+.Ltmp75:
+	.loc	2 643 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:3
+	cmp	r0, r1
+	bhs	.LBB20_11
+	b	.LBB20_2
+.LBB20_2:                               @   in Loop: Header=BB20_1 Depth=1
+	.loc	2 0 3                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movs	r0, #0
+.Ltmp76:
+	.loc	2 644 12 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:12
+	str	r0, [sp]
+	.loc	2 644 10 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:10
+	b	.LBB20_3
+.LBB20_3:                               @   Parent Loop BB20_1 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp77:
+	.loc	2 644 17                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:17
+	ldr	r0, [sp]
+	.loc	2 644 21                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:21
+	ldr	r1, [sp, #12]
+.Ltmp78:
+	.loc	2 644 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:5
+	cmp	r0, r1
+	bhs	.LBB20_9
+	b	.LBB20_4
+.LBB20_4:                               @   in Loop: Header=BB20_3 Depth=2
+.Ltmp79:
+	.loc	2 645 10 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:645:10
+	ldr	r0, [sp]
+	.loc	2 645 15 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:645:15
+	ldr	r1, [sp, #32]
+.Ltmp80:
+	.loc	2 645 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:645:10
+	cmp	r0, r1
+	blo	.LBB20_6
+	b	.LBB20_5
+.LBB20_5:                               @   in Loop: Header=BB20_3 Depth=2
+.Ltmp81:
+	.loc	2 646 21 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:646:21
+	movw	r0, :lower16:background_color
+	movt	r0, :upper16:background_color
+	ldrh	r0, [r0]
+	.loc	2 646 9 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:646:9
+	bl	wr_dat_only
+	.loc	2 647 7 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:647:7
+	b	.LBB20_7
+.Ltmp82:
+.LBB20_6:                               @   in Loop: Header=BB20_3 Depth=2
+	.loc	2 648 21                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:648:21
+	movw	r0, :lower16:foreground_color
+	movt	r0, :upper16:foreground_color
+	ldrh	r0, [r0]
+	.loc	2 648 9 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:648:9
+	bl	wr_dat_only
+	b	.LBB20_7
+.Ltmp83:
+.LBB20_7:                               @   in Loop: Header=BB20_3 Depth=2
+	.loc	2 650 5 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:650:5
+	b	.LBB20_8
+.Ltmp84:
+.LBB20_8:                               @   in Loop: Header=BB20_3 Depth=2
+	.loc	2 644 29                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:29
+	ldr	r0, [sp]
+	adds	r0, #1
+	str	r0, [sp]
+	.loc	2 644 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:644:5
+	b	.LBB20_3
+.Ltmp85:
+.LBB20_9:                               @   in Loop: Header=BB20_1 Depth=1
+	.loc	2 651 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:651:3
+	b	.LBB20_10
+.Ltmp86:
+.LBB20_10:                              @   in Loop: Header=BB20_1 Depth=1
+	.loc	2 643 28                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:28
+	ldr	r0, [sp, #4]
+	adds	r0, #1
+	str	r0, [sp, #4]
+	.loc	2 643 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:643:3
+	b	.LBB20_1
+.Ltmp87:
+.LBB20_11:
+	.loc	2 652 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:652:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 654 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:654:3
+	add	sp, #24
+	pop	{r7, pc}
+.Ltmp88:
+.Lfunc_end20:
+	.size	GLCD_DrawBargraph, .Lfunc_end20-GLCD_DrawBargraph
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_DrawBitmap,"ax",%progbits
+	.hidden	GLCD_DrawBitmap                 @ -- Begin function GLCD_DrawBitmap
+	.globl	GLCD_DrawBitmap
+	.p2align	2
+	.type	GLCD_DrawBitmap,%function
+	.code	16                              @ @GLCD_DrawBitmap
+	.thumb_func
+GLCD_DrawBitmap:
+.Lfunc_begin21:
+	.loc	2 669 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:669:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#32
+	sub	sp, #32
+	.cfi_def_cfa_offset 40
+	ldr.w	r12, [sp, #40]
+	str	r0, [sp, #28]
+	str	r1, [sp, #24]
+	str	r2, [sp, #20]
+	str	r3, [sp, #16]
+.Ltmp89:
+	.loc	2 673 46 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:673:46
+	ldr	r0, [sp, #40]
+	.loc	2 673 11 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:673:11
+	str	r0, [sp, #4]
+	.loc	2 679 18 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:679:18
+	ldr	r0, [sp, #28]
+	.loc	2 679 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:679:21
+	ldr	r1, [sp, #24]
+	.loc	2 679 24                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:679:24
+	ldr	r2, [sp, #20]
+	.loc	2 679 31                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:679:31
+	ldr	r3, [sp, #16]
+	.loc	2 679 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:679:3
+	bl	GLCD_SetWindow
+	movs	r0, #34
+	.loc	2 681 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:681:3
+	bl	wr_cmd
+	.loc	2 682 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:682:3
+	bl	wr_dat_start
+.Ltmp90:
+	.loc	2 683 23                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:23
+	ldr	r0, [sp, #16]
+	.loc	2 683 29 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:29
+	subs	r0, #1
+	.loc	2 683 33                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:33
+	ldr	r1, [sp, #20]
+	.loc	2 683 32                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:32
+	mul	r0, r0, r1
+	.loc	2 683 10                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:10
+	str	r0, [sp, #12]
+	.loc	2 683 8                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:8
+	b	.LBB21_1
+.LBB21_1:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB21_3 Depth 2
+.Ltmp91:
+	.loc	2 683 41                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:41
+	ldr	r0, [sp, #12]
+.Ltmp92:
+	.loc	2 683 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:3
+	cmp	r0, #0
+	bmi	.LBB21_8
+	b	.LBB21_2
+.LBB21_2:                               @   in Loop: Header=BB21_1 Depth=1
+	.loc	2 0 3                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movs	r0, #0
+.Ltmp93:
+	.loc	2 684 12 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:12
+	str	r0, [sp, #8]
+	.loc	2 684 10 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:10
+	b	.LBB21_3
+.LBB21_3:                               @   Parent Loop BB21_1 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp94:
+	.loc	2 684 17                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:17
+	ldr	r0, [sp, #8]
+	.loc	2 684 30                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:30
+	ldr	r1, [sp, #20]
+.Ltmp95:
+	.loc	2 684 5                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:5
+	cmp	r0, r1
+	bge	.LBB21_6
+	b	.LBB21_4
+.LBB21_4:                               @   in Loop: Header=BB21_3 Depth=2
+.Ltmp96:
+	.loc	2 685 19 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:19
+	ldr	r0, [sp, #4]
+	.loc	2 685 27 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:27
+	ldr	r1, [sp, #12]
+	.loc	2 685 29                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:29
+	ldr	r2, [sp, #8]
+	.loc	2 685 28                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:28
+	add	r1, r2
+	.loc	2 685 19                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:19
+	ldrh.w	r0, [r0, r1, lsl #1]
+	.loc	2 685 7                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:685:7
+	bl	wr_dat_only
+	.loc	2 686 5 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:686:5
+	b	.LBB21_5
+.Ltmp97:
+.LBB21_5:                               @   in Loop: Header=BB21_3 Depth=2
+	.loc	2 684 38                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:38
+	ldr	r0, [sp, #8]
+	adds	r0, #1
+	str	r0, [sp, #8]
+	.loc	2 684 5 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:684:5
+	b	.LBB21_3
+.Ltmp98:
+.LBB21_6:                               @   in Loop: Header=BB21_1 Depth=1
+	.loc	2 687 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:687:3
+	b	.LBB21_7
+.Ltmp99:
+.LBB21_7:                               @   in Loop: Header=BB21_1 Depth=1
+	.loc	2 683 54                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:54
+	ldr	r1, [sp, #20]
+	.loc	2 683 51 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:51
+	ldr	r0, [sp, #12]
+	subs	r0, r0, r1
+	str	r0, [sp, #12]
+	.loc	2 683 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:683:3
+	b	.LBB21_1
+.Ltmp100:
+.LBB21_8:
+	.loc	2 688 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:688:3
+	bl	wr_dat_stop
+	movs	r0, #0
+	.loc	2 690 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:690:3
+	add	sp, #32
+	pop	{r7, pc}
+.Ltmp101:
+.Lfunc_end21:
+	.size	GLCD_DrawBitmap, .Lfunc_end21-GLCD_DrawBitmap
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_VScroll,"ax",%progbits
+	.hidden	GLCD_VScroll                    @ -- Begin function GLCD_VScroll
+	.globl	GLCD_VScroll
+	.p2align	2
+	.type	GLCD_VScroll,%function
+	.code	16                              @ @GLCD_VScroll
+	.thumb_func
+GLCD_VScroll:
+.Lfunc_begin22:
+	.loc	2 701 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:701:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+	str	r0, [sp]
+	mov.w	r0, #-1
+.Ltmp102:
+	.loc	2 725 3 prologue_end epilogue_begin @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:725:3
+	add	sp, #4
+	bx	lr
+.Ltmp103:
+.Lfunc_end22:
+	.size	GLCD_VScroll, .Lfunc_end22-GLCD_VScroll
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_FrameBufferAccess,"ax",%progbits
+	.hidden	GLCD_FrameBufferAccess          @ -- Begin function GLCD_FrameBufferAccess
+	.globl	GLCD_FrameBufferAccess
+	.p2align	2
+	.type	GLCD_FrameBufferAccess,%function
+	.code	16                              @ @GLCD_FrameBufferAccess
+	.thumb_func
+GLCD_FrameBufferAccess:
+.Lfunc_begin23:
+	.loc	2 739 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:739:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+                                        @ kill: def $r1 killed $r0
+	strb.w	r0, [sp, #7]
+	movs	r1, #0
+	str	r1, [sp]                        @ 4-byte Spill
+	mov.w	r2, #320
+	movs	r3, #240
+.Ltmp104:
+	.loc	2 742 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:742:3
+	mov	r0, r1
+	bl	GLCD_SetWindow
+	ldr	r1, [sp]                        @ 4-byte Reload
+	movs	r0, #32
+	.loc	2 744 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:744:3
+	bl	wr_reg
+	ldr	r1, [sp]                        @ 4-byte Reload
+	movs	r0, #33
+	.loc	2 745 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:745:3
+	bl	wr_reg
+	movs	r0, #34
+	.loc	2 746 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:746:3
+	bl	wr_cmd
+	ldr	r0, [sp]                        @ 4-byte Reload
+	.loc	2 748 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:748:3
+	add	sp, #8
+	pop	{r7, pc}
+.Ltmp105:
+.Lfunc_end23:
+	.size	GLCD_FrameBufferAccess, .Lfunc_end23-GLCD_FrameBufferAccess
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GLCD_FrameBufferAddress,"ax",%progbits
+	.hidden	GLCD_FrameBufferAddress         @ -- Begin function GLCD_FrameBufferAddress
+	.globl	GLCD_FrameBufferAddress
+	.p2align	2
+	.type	GLCD_FrameBufferAddress,%function
+	.code	16                              @ @GLCD_FrameBufferAddress
+	.thumb_func
+GLCD_FrameBufferAddress:
+.Lfunc_begin24:
+	.loc	2 756 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:756:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	movs	r0, #0
+.Ltmp106:
+	.loc	2 757 3 prologue_end            @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:757:3
+	bx	lr
+.Ltmp107:
+.Lfunc_end24:
+	.size	GLCD_FrameBufferAddress, .Lfunc_end24-GLCD_FrameBufferAddress
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.spi_tran,"ax",%progbits
+	.p2align	2                               @ -- Begin function spi_tran
+	.type	spi_tran,%function
+	.code	16                              @ @spi_tran
+	.thumb_func
+spi_tran:
+.Lfunc_begin25:
+	.loc	2 126 0                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:126:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#4
+	sub	sp, #4
+	.cfi_def_cfa_offset 4
+                                        @ kill: def $r1 killed $r0
+	strb.w	r0, [sp, #3]
+.Ltmp108:
+	.loc	2 127 23 prologue_end           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:127:23
+	ldrb.w	r0, [sp, #3]
+	movw	r1, #24584
+	movt	r1, #16416
+	.loc	2 127 21 is_stmt 0              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:127:21
+	str	r0, [r1]
+	.loc	2 128 3 is_stmt 1               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:128:3
+	b	.LBB25_1
+.LBB25_1:                               @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 3 is_stmt 0                 @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movw	r0, #24588
+	movt	r0, #16416
+	.loc	2 128 27                        @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:128:27
+	ldr	r0, [r0]
+	.loc	2 128 3                         @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:128:3
+	lsls	r0, r0, #29
+	cmp	r0, #0
+	bmi	.LBB25_3
+	b	.LBB25_2
+.LBB25_2:                               @   in Loop: Header=BB25_1 Depth=1
+	b	.LBB25_1
+.LBB25_3:
+	.loc	2 0 3                           @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:0:3
+	movw	r0, #24584
+	movt	r0, #16416
+	.loc	2 129 35 is_stmt 1              @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:129:35
+	ldr	r0, [r0]
+	.loc	2 129 3 is_stmt 0               @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:129:3
+	uxtb	r0, r0
+	.loc	2 129 3 epilogue_begin          @ C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c:129:3
+	add	sp, #4
+	bx	lr
+.Ltmp109:
+.Lfunc_end25:
+	.size	spi_tran, .Lfunc_end25-spi_tran
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.type	foreground_color,%object        @ @foreground_color
+	.section	.bss.foreground_color,"aw",%nobits
+	.p2align	1, 0x0
+foreground_color:
+	.short	0                               @ 0x0
+	.size	foreground_color, 2
+
+	.type	background_color,%object        @ @background_color
+	.section	.data.background_color,"aw",%progbits
+	.p2align	1, 0x0
+background_color:
+	.short	65535                           @ 0xffff
+	.size	background_color, 2
+
+	.type	active_font,%object             @ @active_font
+	.section	.bss.active_font,"aw",%nobits
+	.p2align	2, 0x0
+active_font:
+	.long	0
+	.size	active_font, 4
+
+	.section	.debug_abbrev,"",%progbits
+	.byte	1                               @ Abbreviation Code
+	.byte	17                              @ DW_TAG_compile_unit
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	37                              @ DW_AT_producer
+	.byte	14                              @ DW_FORM_strp
+	.byte	19                              @ DW_AT_language
+	.byte	5                               @ DW_FORM_data2
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	16                              @ DW_AT_stmt_list
+	.byte	23                              @ DW_FORM_sec_offset
+	.byte	27                              @ DW_AT_comp_dir
+	.byte	14                              @ DW_FORM_strp
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	85                              @ DW_AT_ranges
+	.byte	23                              @ DW_FORM_sec_offset
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	2                               @ Abbreviation Code
+	.byte	52                              @ DW_TAG_variable
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	3                               @ Abbreviation Code
+	.byte	22                              @ DW_TAG_typedef
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	4                               @ Abbreviation Code
+	.byte	36                              @ DW_TAG_base_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	62                              @ DW_AT_encoding
+	.byte	11                              @ DW_FORM_data1
+	.byte	11                              @ DW_AT_byte_size
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	5                               @ Abbreviation Code
+	.byte	15                              @ DW_TAG_pointer_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	6                               @ Abbreviation Code
+	.byte	38                              @ DW_TAG_const_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	7                               @ Abbreviation Code
+	.byte	19                              @ DW_TAG_structure_type
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	11                              @ DW_AT_byte_size
+	.byte	11                              @ DW_FORM_data1
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	8                               @ Abbreviation Code
+	.byte	13                              @ DW_TAG_member
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	56                              @ DW_AT_data_member_location
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	9                               @ Abbreviation Code
+	.byte	19                              @ DW_TAG_structure_type
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	11                              @ DW_AT_byte_size
+	.byte	11                              @ DW_FORM_data1
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	10                              @ Abbreviation Code
+	.byte	53                              @ DW_TAG_volatile_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	11                              @ Abbreviation Code
+	.byte	1                               @ DW_TAG_array_type
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	12                              @ Abbreviation Code
+	.byte	33                              @ DW_TAG_subrange_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	55                              @ DW_AT_count
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	13                              @ Abbreviation Code
+	.byte	36                              @ DW_TAG_base_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	11                              @ DW_AT_byte_size
+	.byte	11                              @ DW_FORM_data1
+	.byte	62                              @ DW_AT_encoding
+	.byte	11                              @ DW_FORM_data1
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	14                              @ Abbreviation Code
+	.byte	38                              @ DW_TAG_const_type
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	15                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	63                              @ DW_AT_external
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	16                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	17                              @ Abbreviation Code
+	.byte	5                               @ DW_TAG_formal_parameter
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	18                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	5                               @ DW_FORM_data2
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	63                              @ DW_AT_external
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	19                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	5                               @ DW_FORM_data2
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	63                              @ DW_AT_external
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	20                              @ Abbreviation Code
+	.byte	5                               @ DW_TAG_formal_parameter
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	5                               @ DW_FORM_data2
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	21                              @ Abbreviation Code
+	.byte	52                              @ DW_TAG_variable
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	5                               @ DW_FORM_data2
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	22                              @ Abbreviation Code
+	.byte	52                              @ DW_TAG_variable
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	2                               @ DW_AT_location
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	23                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	0                               @ DW_CHILDREN_no
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	24                              @ Abbreviation Code
+	.byte	46                              @ DW_TAG_subprogram
+	.byte	1                               @ DW_CHILDREN_yes
+	.byte	17                              @ DW_AT_low_pc
+	.byte	1                               @ DW_FORM_addr
+	.byte	18                              @ DW_AT_high_pc
+	.byte	6                               @ DW_FORM_data4
+	.byte	64                              @ DW_AT_frame_base
+	.byte	24                              @ DW_FORM_exprloc
+	.byte	3                               @ DW_AT_name
+	.byte	14                              @ DW_FORM_strp
+	.byte	58                              @ DW_AT_decl_file
+	.byte	11                              @ DW_FORM_data1
+	.byte	59                              @ DW_AT_decl_line
+	.byte	11                              @ DW_FORM_data1
+	.byte	39                              @ DW_AT_prototyped
+	.byte	25                              @ DW_FORM_flag_present
+	.byte	73                              @ DW_AT_type
+	.byte	19                              @ DW_FORM_ref4
+	.byte	0                               @ EOM(1)
+	.byte	0                               @ EOM(2)
+	.byte	0                               @ EOM(3)
+	.section	.debug_info,"",%progbits
+.Lcu_begin0:
+	.long	.Ldebug_info_end0-.Ldebug_info_start0 @ Length of Unit
+.Ldebug_info_start0:
+	.short	4                               @ DWARF version number
+	.long	.debug_abbrev                   @ Offset Into Abbrev. Section
+	.byte	4                               @ Address Size (in bytes)
+	.byte	1                               @ Abbrev [1] 0xb:0x7e0 DW_TAG_compile_unit
+	.long	.Linfo_string0                  @ DW_AT_producer
+	.short	29                              @ DW_AT_language
+	.long	.Linfo_string1                  @ DW_AT_name
+	.long	.Lline_table_start0             @ DW_AT_stmt_list
+	.long	.Linfo_string2                  @ DW_AT_comp_dir
+	.long	0                               @ DW_AT_low_pc
+	.long	.Ldebug_ranges0                 @ DW_AT_ranges
+	.byte	2                               @ Abbrev [2] 0x26:0x11 DW_TAG_variable
+	.long	.Linfo_string3                  @ DW_AT_name
+	.long	55                              @ DW_AT_type
+	.byte	2                               @ DW_AT_decl_file
+	.byte	88                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	foreground_color
+	.byte	3                               @ Abbrev [3] 0x37:0xb DW_TAG_typedef
+	.long	66                              @ DW_AT_type
+	.long	.Linfo_string5                  @ DW_AT_name
+	.byte	1                               @ DW_AT_decl_file
+	.byte	63                              @ DW_AT_decl_line
+	.byte	4                               @ Abbrev [4] 0x42:0x7 DW_TAG_base_type
+	.long	.Linfo_string4                  @ DW_AT_name
+	.byte	7                               @ DW_AT_encoding
+	.byte	2                               @ DW_AT_byte_size
+	.byte	2                               @ Abbrev [2] 0x49:0x11 DW_TAG_variable
+	.long	.Linfo_string6                  @ DW_AT_name
+	.long	55                              @ DW_AT_type
+	.byte	2                               @ DW_AT_decl_file
+	.byte	89                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	background_color
+	.byte	2                               @ Abbrev [2] 0x5a:0x11 DW_TAG_variable
+	.long	.Linfo_string7                  @ DW_AT_name
+	.long	107                             @ DW_AT_type
+	.byte	2                               @ DW_AT_decl_file
+	.byte	90                              @ DW_AT_decl_line
+	.byte	5                               @ DW_AT_location
+	.byte	3
+	.long	active_font
+	.byte	5                               @ Abbrev [5] 0x6b:0x5 DW_TAG_pointer_type
+	.long	112                             @ DW_AT_type
+	.byte	3                               @ Abbrev [3] 0x70:0xb DW_TAG_typedef
+	.long	123                             @ DW_AT_type
+	.long	.Linfo_string18                 @ DW_AT_name
+	.byte	3                               @ DW_AT_decl_file
+	.byte	48                              @ DW_AT_decl_line
+	.byte	6                               @ Abbrev [6] 0x7b:0x5 DW_TAG_const_type
+	.long	128                             @ DW_AT_type
+	.byte	7                               @ Abbrev [7] 0x80:0x45 DW_TAG_structure_type
+	.long	.Linfo_string17                 @ DW_AT_name
+	.byte	16                              @ DW_AT_byte_size
+	.byte	3                               @ DW_AT_decl_file
+	.byte	42                              @ DW_AT_decl_line
+	.byte	8                               @ Abbrev [8] 0x88:0xc DW_TAG_member
+	.long	.Linfo_string8                  @ DW_AT_name
+	.long	55                              @ DW_AT_type
+	.byte	3                               @ DW_AT_decl_file
+	.byte	43                              @ DW_AT_decl_line
+	.byte	0                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x94:0xc DW_TAG_member
+	.long	.Linfo_string9                  @ DW_AT_name
+	.long	55                              @ DW_AT_type
+	.byte	3                               @ DW_AT_decl_file
+	.byte	44                              @ DW_AT_decl_line
+	.byte	2                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0xa0:0xc DW_TAG_member
+	.long	.Linfo_string10                 @ DW_AT_name
+	.long	197                             @ DW_AT_type
+	.byte	3                               @ DW_AT_decl_file
+	.byte	45                              @ DW_AT_decl_line
+	.byte	4                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0xac:0xc DW_TAG_member
+	.long	.Linfo_string13                 @ DW_AT_name
+	.long	197                             @ DW_AT_type
+	.byte	3                               @ DW_AT_decl_file
+	.byte	46                              @ DW_AT_decl_line
+	.byte	8                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0xb8:0xc DW_TAG_member
+	.long	.Linfo_string14                 @ DW_AT_name
+	.long	215                             @ DW_AT_type
+	.byte	3                               @ DW_AT_decl_file
+	.byte	47                              @ DW_AT_decl_line
+	.byte	12                              @ DW_AT_data_member_location
+	.byte	0                               @ End Of Children Mark
+	.byte	3                               @ Abbrev [3] 0xc5:0xb DW_TAG_typedef
+	.long	208                             @ DW_AT_type
+	.long	.Linfo_string12                 @ DW_AT_name
+	.byte	1                               @ DW_AT_decl_file
+	.byte	64                              @ DW_AT_decl_line
+	.byte	4                               @ Abbrev [4] 0xd0:0x7 DW_TAG_base_type
+	.long	.Linfo_string11                 @ DW_AT_name
+	.byte	7                               @ DW_AT_encoding
+	.byte	4                               @ DW_AT_byte_size
+	.byte	5                               @ Abbrev [5] 0xd7:0x5 DW_TAG_pointer_type
+	.long	220                             @ DW_AT_type
+	.byte	6                               @ Abbrev [6] 0xdc:0x5 DW_TAG_const_type
+	.long	225                             @ DW_AT_type
+	.byte	3                               @ Abbrev [3] 0xe1:0xb DW_TAG_typedef
+	.long	236                             @ DW_AT_type
+	.long	.Linfo_string16                 @ DW_AT_name
+	.byte	1                               @ DW_AT_decl_file
+	.byte	62                              @ DW_AT_decl_line
+	.byte	4                               @ Abbrev [4] 0xec:0x7 DW_TAG_base_type
+	.long	.Linfo_string15                 @ DW_AT_name
+	.byte	8                               @ DW_AT_encoding
+	.byte	1                               @ DW_AT_byte_size
+	.byte	5                               @ Abbrev [5] 0xf3:0x5 DW_TAG_pointer_type
+	.long	248                             @ DW_AT_type
+	.byte	3                               @ Abbrev [3] 0xf8:0xb DW_TAG_typedef
+	.long	259                             @ DW_AT_type
+	.long	.Linfo_string29                 @ DW_AT_name
+	.byte	4                               @ DW_AT_decl_file
+	.byte	195                             @ DW_AT_decl_line
+	.byte	9                               @ Abbrev [9] 0x103:0x7d DW_TAG_structure_type
+	.byte	40                              @ DW_AT_byte_size
+	.byte	4                               @ DW_AT_decl_file
+	.byte	141                             @ DW_AT_decl_line
+	.byte	8                               @ Abbrev [8] 0x107:0xc DW_TAG_member
+	.long	.Linfo_string19                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	143                             @ DW_AT_decl_line
+	.byte	0                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x113:0xc DW_TAG_member
+	.long	.Linfo_string20                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	150                             @ DW_AT_decl_line
+	.byte	4                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x11f:0xc DW_TAG_member
+	.long	.Linfo_string21                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	156                             @ DW_AT_decl_line
+	.byte	8                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x12b:0xc DW_TAG_member
+	.long	.Linfo_string22                 @ DW_AT_name
+	.long	389                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	159                             @ DW_AT_decl_line
+	.byte	12                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x137:0xc DW_TAG_member
+	.long	.Linfo_string23                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	166                             @ DW_AT_decl_line
+	.byte	16                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x143:0xc DW_TAG_member
+	.long	.Linfo_string24                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	169                             @ DW_AT_decl_line
+	.byte	20                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x14f:0xc DW_TAG_member
+	.long	.Linfo_string25                 @ DW_AT_name
+	.long	389                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	175                             @ DW_AT_decl_line
+	.byte	24                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x15b:0xc DW_TAG_member
+	.long	.Linfo_string26                 @ DW_AT_name
+	.long	389                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	181                             @ DW_AT_decl_line
+	.byte	28                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x167:0xc DW_TAG_member
+	.long	.Linfo_string27                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	187                             @ DW_AT_decl_line
+	.byte	32                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x173:0xc DW_TAG_member
+	.long	.Linfo_string28                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	191                             @ DW_AT_decl_line
+	.byte	36                              @ DW_AT_data_member_location
+	.byte	0                               @ End Of Children Mark
+	.byte	10                              @ Abbrev [10] 0x180:0x5 DW_TAG_volatile_type
+	.long	197                             @ DW_AT_type
+	.byte	6                               @ Abbrev [6] 0x185:0x5 DW_TAG_const_type
+	.long	384                             @ DW_AT_type
+	.byte	5                               @ Abbrev [5] 0x18a:0x5 DW_TAG_pointer_type
+	.long	399                             @ DW_AT_type
+	.byte	3                               @ Abbrev [3] 0x18f:0xb DW_TAG_typedef
+	.long	410                             @ DW_AT_type
+	.long	.Linfo_string43                 @ DW_AT_name
+	.byte	4                               @ DW_AT_decl_file
+	.byte	77                              @ DW_AT_decl_line
+	.byte	9                               @ Abbrev [9] 0x19a:0x95 DW_TAG_structure_type
+	.byte	80                              @ DW_AT_byte_size
+	.byte	4                               @ DW_AT_decl_file
+	.byte	43                              @ DW_AT_decl_line
+	.byte	8                               @ Abbrev [8] 0x19e:0xc DW_TAG_member
+	.long	.Linfo_string30                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	45                              @ DW_AT_decl_line
+	.byte	0                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1aa:0xc DW_TAG_member
+	.long	.Linfo_string31                 @ DW_AT_name
+	.long	559                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	48                              @ DW_AT_decl_line
+	.byte	4                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1b6:0xc DW_TAG_member
+	.long	.Linfo_string33                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	49                              @ DW_AT_decl_line
+	.byte	8                               @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1c2:0xc DW_TAG_member
+	.long	.Linfo_string34                 @ DW_AT_name
+	.long	559                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	52                              @ DW_AT_decl_line
+	.byte	12                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1ce:0xc DW_TAG_member
+	.long	.Linfo_string35                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	53                              @ DW_AT_decl_line
+	.byte	16                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1da:0xc DW_TAG_member
+	.long	.Linfo_string36                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	54                              @ DW_AT_decl_line
+	.byte	20                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1e6:0xc DW_TAG_member
+	.long	.Linfo_string37                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	55                              @ DW_AT_decl_line
+	.byte	24                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1f2:0xc DW_TAG_member
+	.long	.Linfo_string38                 @ DW_AT_name
+	.long	559                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	57                              @ DW_AT_decl_line
+	.byte	28                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x1fe:0xc DW_TAG_member
+	.long	.Linfo_string39                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	58                              @ DW_AT_decl_line
+	.byte	32                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x20a:0xc DW_TAG_member
+	.long	.Linfo_string40                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	60                              @ DW_AT_decl_line
+	.byte	36                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x216:0xc DW_TAG_member
+	.long	.Linfo_string41                 @ DW_AT_name
+	.long	578                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	64                              @ DW_AT_decl_line
+	.byte	40                              @ DW_AT_data_member_location
+	.byte	8                               @ Abbrev [8] 0x222:0xc DW_TAG_member
+	.long	.Linfo_string42                 @ DW_AT_name
+	.long	384                             @ DW_AT_type
+	.byte	4                               @ DW_AT_decl_file
+	.byte	65                              @ DW_AT_decl_line
+	.byte	76                              @ DW_AT_data_member_location
+	.byte	0                               @ End Of Children Mark
+	.byte	11                              @ Abbrev [11] 0x22f:0xc DW_TAG_array_type
+	.long	197                             @ DW_AT_type
+	.byte	12                              @ Abbrev [12] 0x234:0x6 DW_TAG_subrange_type
+	.long	571                             @ DW_AT_type
+	.byte	1                               @ DW_AT_count
+	.byte	0                               @ End Of Children Mark
+	.byte	13                              @ Abbrev [13] 0x23b:0x7 DW_TAG_base_type
+	.long	.Linfo_string32                 @ DW_AT_name
+	.byte	8                               @ DW_AT_byte_size
+	.byte	7                               @ DW_AT_encoding
+	.byte	11                              @ Abbrev [11] 0x242:0xc DW_TAG_array_type
+	.long	197                             @ DW_AT_type
+	.byte	12                              @ Abbrev [12] 0x247:0x6 DW_TAG_subrange_type
+	.long	571                             @ DW_AT_type
+	.byte	9                               @ DW_AT_count
+	.byte	0                               @ End Of Children Mark
+	.byte	5                               @ Abbrev [5] 0x24e:0x5 DW_TAG_pointer_type
+	.long	595                             @ DW_AT_type
+	.byte	6                               @ Abbrev [6] 0x253:0x5 DW_TAG_const_type
+	.long	55                              @ DW_AT_type
+	.byte	5                               @ Abbrev [5] 0x258:0x5 DW_TAG_pointer_type
+	.long	605                             @ DW_AT_type
+	.byte	14                              @ Abbrev [14] 0x25d:0x1 DW_TAG_const_type
+	.byte	3                               @ Abbrev [3] 0x25e:0xb DW_TAG_typedef
+	.long	617                             @ DW_AT_type
+	.long	.Linfo_string45                 @ DW_AT_name
+	.byte	1                               @ DW_AT_decl_file
+	.byte	58                              @ DW_AT_decl_line
+	.byte	4                               @ Abbrev [4] 0x269:0x7 DW_TAG_base_type
+	.long	.Linfo_string44                 @ DW_AT_name
+	.byte	5                               @ DW_AT_encoding
+	.byte	4                               @ DW_AT_byte_size
+	.byte	15                              @ Abbrev [15] 0x270:0x15 DW_TAG_subprogram
+	.long	.Lfunc_begin0                   @ DW_AT_low_pc
+	.long	.Lfunc_end0-.Lfunc_begin0       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string46                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	255                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	16                              @ Abbrev [16] 0x285:0x20 DW_TAG_subprogram
+	.long	.Lfunc_begin1                   @ DW_AT_low_pc
+	.long	.Lfunc_end1-.Lfunc_begin1       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string47                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	104                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x296:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string72                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	104                             @ DW_AT_decl_line
+	.long	617                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	16                              @ Abbrev [16] 0x2a5:0x2e DW_TAG_subprogram
+	.long	.Lfunc_begin2                   @ DW_AT_low_pc
+	.long	.Lfunc_end2-.Lfunc_begin2       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string48                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	201                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x2b6:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	7
+	.long	.Linfo_string73                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	201                             @ DW_AT_decl_line
+	.long	225                             @ DW_AT_type
+	.byte	17                              @ Abbrev [17] 0x2c4:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string74                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	201                             @ DW_AT_decl_line
+	.long	55                              @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	18                              @ Abbrev [18] 0x2d3:0x16 DW_TAG_subprogram
+	.long	.Lfunc_begin3                   @ DW_AT_low_pc
+	.long	.Lfunc_end3-.Lfunc_begin3       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string49                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	389                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	19                              @ Abbrev [19] 0x2e9:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin4                   @ DW_AT_low_pc
+	.long	.Lfunc_end4-.Lfunc_begin4       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string50                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	402                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x2ff:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string75                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	402                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x30f:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin5                   @ DW_AT_low_pc
+	.long	.Lfunc_end5-.Lfunc_begin5       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string51                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	415                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x325:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string75                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	415                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x335:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin6                   @ DW_AT_low_pc
+	.long	.Lfunc_end6-.Lfunc_begin6       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string52                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	427                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	21                              @ Abbrev [21] 0x34b:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string76                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	428                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	16                              @ Abbrev [16] 0x35b:0x66 DW_TAG_subprogram
+	.long	.Lfunc_begin7                   @ DW_AT_low_pc
+	.long	.Lfunc_end7-.Lfunc_begin7       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string53                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	226                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x36c:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	226                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	17                              @ Abbrev [17] 0x37a:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	226                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	17                              @ Abbrev [17] 0x388:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string79                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	226                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	17                              @ Abbrev [17] 0x396:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string80                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	226                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	22                              @ Abbrev [22] 0x3a4:0xe DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string81                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	227                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	22                              @ Abbrev [22] 0x3b2:0xe DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string82                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	227                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	16                              @ Abbrev [16] 0x3c1:0x20 DW_TAG_subprogram
+	.long	.Lfunc_begin8                   @ DW_AT_low_pc
+	.long	.Lfunc_end8-.Lfunc_begin8       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string54                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	137                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x3d2:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	7
+	.long	.Linfo_string83                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	137                             @ DW_AT_decl_line
+	.long	225                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	23                              @ Abbrev [23] 0x3e1:0x11 DW_TAG_subprogram
+	.long	.Lfunc_begin9                   @ DW_AT_low_pc
+	.long	.Lfunc_end9-.Lfunc_begin9       @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string55                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	162                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	16                              @ Abbrev [16] 0x3f2:0x20 DW_TAG_subprogram
+	.long	.Lfunc_begin10                  @ DW_AT_low_pc
+	.long	.Lfunc_end10-.Lfunc_begin10     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string56                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	180                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x403:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	6
+	.long	.Linfo_string84                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	180                             @ DW_AT_decl_line
+	.long	55                              @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	23                              @ Abbrev [23] 0x412:0x11 DW_TAG_subprogram
+	.long	.Lfunc_begin11                  @ DW_AT_low_pc
+	.long	.Lfunc_end11-.Lfunc_begin11     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string57                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	171                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	19                              @ Abbrev [19] 0x423:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin12                  @ DW_AT_low_pc
+	.long	.Lfunc_end12-.Lfunc_begin12     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string58                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	449                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x439:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string85                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	449                             @ DW_AT_decl_line
+	.long	107                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x449:0x35 DW_TAG_subprogram
+	.long	.Lfunc_begin13                  @ DW_AT_low_pc
+	.long	.Lfunc_end13-.Lfunc_begin13     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string59                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	463                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x45f:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	463                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x46e:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	463                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	16                              @ Abbrev [16] 0x47e:0x20 DW_TAG_subprogram
+	.long	.Lfunc_begin14                  @ DW_AT_low_pc
+	.long	.Lfunc_end14-.Lfunc_begin14     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string60                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	150                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.byte	17                              @ Abbrev [17] 0x48f:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	6
+	.long	.Linfo_string84                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	150                             @ DW_AT_decl_line
+	.long	55                              @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x49e:0x44 DW_TAG_subprogram
+	.long	.Lfunc_begin15                  @ DW_AT_low_pc
+	.long	.Lfunc_end15-.Lfunc_begin15     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string61                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	496                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x4b4:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	496                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x4c3:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	496                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x4d2:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string86                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	496                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x4e2:0x44 DW_TAG_subprogram
+	.long	.Lfunc_begin16                  @ DW_AT_low_pc
+	.long	.Lfunc_end16-.Lfunc_begin16     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string62                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	522                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x4f8:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	522                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x507:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	522                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x516:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string86                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	522                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x526:0x53 DW_TAG_subprogram
+	.long	.Lfunc_begin17                  @ DW_AT_low_pc
+	.long	.Lfunc_end17-.Lfunc_begin17     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string63                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	549                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x53c:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	549                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x54b:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	549                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x55a:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string8                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	549                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x569:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string9                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	549                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x579:0x80 DW_TAG_subprogram
+	.long	.Lfunc_begin18                  @ DW_AT_low_pc
+	.long	.Lfunc_end18-.Lfunc_begin18     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string64                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	569                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x58f:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	32
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	569                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x59e:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	569                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x5ad:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string87                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	569                             @ DW_AT_decl_line
+	.long	606                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x5bc:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string76                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	570                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x5cb:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string88                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	570                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x5da:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string89                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	571                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x5e9:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string90                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	572                             @ DW_AT_decl_line
+	.long	215                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x5f9:0x44 DW_TAG_subprogram
+	.long	.Lfunc_begin19                  @ DW_AT_low_pc
+	.long	.Lfunc_end19-.Lfunc_begin19     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string65                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	610                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x60f:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	610                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x61e:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	610                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x62d:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string91                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	610                             @ DW_AT_decl_line
+	.long	2002                            @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x63d:0x80 DW_TAG_subprogram
+	.long	.Lfunc_begin20                  @ DW_AT_low_pc
+	.long	.Lfunc_end20-.Lfunc_begin20     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string66                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x653:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x662:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x671:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string8                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x680:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string9                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x68f:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	32
+	.long	.Linfo_string74                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	630                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x69e:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string76                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	631                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x6ad:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string88                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	631                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x6bd:0x8f DW_TAG_subprogram
+	.long	.Lfunc_begin21                  @ DW_AT_low_pc
+	.long	.Lfunc_end21-.Lfunc_begin21     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string67                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x6d3:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string77                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x6e2:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string78                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x6f1:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string8                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x700:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string9                  @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	20                              @ Abbrev [20] 0x70f:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	40
+	.long	.Linfo_string14                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	669                             @ DW_AT_decl_line
+	.long	215                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x71e:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string76                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	670                             @ DW_AT_decl_line
+	.long	606                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x72d:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string88                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	670                             @ DW_AT_decl_line
+	.long	606                             @ DW_AT_type
+	.byte	21                              @ Abbrev [21] 0x73c:0xf DW_TAG_variable
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string93                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	671                             @ DW_AT_decl_line
+	.long	590                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x74c:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin22                  @ DW_AT_low_pc
+	.long	.Lfunc_end22-.Lfunc_begin22     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string68                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	701                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x762:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string94                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	701                             @ DW_AT_decl_line
+	.long	197                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	19                              @ Abbrev [19] 0x772:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin23                  @ DW_AT_low_pc
+	.long	.Lfunc_end23-.Lfunc_begin23     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string69                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	739                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	606                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	20                              @ Abbrev [20] 0x788:0xf DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	7
+	.long	.Linfo_string95                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	739                             @ DW_AT_decl_line
+	.long	2019                            @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	18                              @ Abbrev [18] 0x798:0x16 DW_TAG_subprogram
+	.long	.Lfunc_begin24                  @ DW_AT_low_pc
+	.long	.Lfunc_end24-.Lfunc_begin24     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string70                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.short	756                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	197                             @ DW_AT_type
+                                        @ DW_AT_external
+	.byte	24                              @ Abbrev [24] 0x7ae:0x24 DW_TAG_subprogram
+	.long	.Lfunc_begin25                  @ DW_AT_low_pc
+	.long	.Lfunc_end25-.Lfunc_begin25     @ DW_AT_high_pc
+	.byte	1                               @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string71                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	126                             @ DW_AT_decl_line
+                                        @ DW_AT_prototyped
+	.long	225                             @ DW_AT_type
+	.byte	17                              @ Abbrev [17] 0x7c3:0xe DW_TAG_formal_parameter
+	.byte	2                               @ DW_AT_location
+	.byte	145
+	.byte	3
+	.long	.Linfo_string97                 @ DW_AT_name
+	.byte	2                               @ DW_AT_decl_file
+	.byte	126                             @ DW_AT_decl_line
+	.long	225                             @ DW_AT_type
+	.byte	0                               @ End Of Children Mark
+	.byte	5                               @ Abbrev [5] 0x7d2:0x5 DW_TAG_pointer_type
+	.long	2007                            @ DW_AT_type
+	.byte	6                               @ Abbrev [6] 0x7d7:0x5 DW_TAG_const_type
+	.long	2012                            @ DW_AT_type
+	.byte	4                               @ Abbrev [4] 0x7dc:0x7 DW_TAG_base_type
+	.long	.Linfo_string92                 @ DW_AT_name
+	.byte	8                               @ DW_AT_encoding
+	.byte	1                               @ DW_AT_byte_size
+	.byte	4                               @ Abbrev [4] 0x7e3:0x7 DW_TAG_base_type
+	.long	.Linfo_string96                 @ DW_AT_name
+	.byte	2                               @ DW_AT_encoding
+	.byte	1                               @ DW_AT_byte_size
+	.byte	0                               @ End Of Children Mark
+.Ldebug_info_end0:
+	.section	.debug_ranges,"",%progbits
+.Ldebug_ranges0:
+	.long	.Lfunc_begin0
+	.long	.Lfunc_end0
+	.long	.Lfunc_begin1
+	.long	.Lfunc_end1
+	.long	.Lfunc_begin2
+	.long	.Lfunc_end2
+	.long	.Lfunc_begin3
+	.long	.Lfunc_end3
+	.long	.Lfunc_begin4
+	.long	.Lfunc_end4
+	.long	.Lfunc_begin5
+	.long	.Lfunc_end5
+	.long	.Lfunc_begin6
+	.long	.Lfunc_end6
+	.long	.Lfunc_begin7
+	.long	.Lfunc_end7
+	.long	.Lfunc_begin8
+	.long	.Lfunc_end8
+	.long	.Lfunc_begin9
+	.long	.Lfunc_end9
+	.long	.Lfunc_begin10
+	.long	.Lfunc_end10
+	.long	.Lfunc_begin11
+	.long	.Lfunc_end11
+	.long	.Lfunc_begin12
+	.long	.Lfunc_end12
+	.long	.Lfunc_begin13
+	.long	.Lfunc_end13
+	.long	.Lfunc_begin14
+	.long	.Lfunc_end14
+	.long	.Lfunc_begin15
+	.long	.Lfunc_end15
+	.long	.Lfunc_begin16
+	.long	.Lfunc_end16
+	.long	.Lfunc_begin17
+	.long	.Lfunc_end17
+	.long	.Lfunc_begin18
+	.long	.Lfunc_end18
+	.long	.Lfunc_begin19
+	.long	.Lfunc_end19
+	.long	.Lfunc_begin20
+	.long	.Lfunc_end20
+	.long	.Lfunc_begin21
+	.long	.Lfunc_end21
+	.long	.Lfunc_begin22
+	.long	.Lfunc_end22
+	.long	.Lfunc_begin23
+	.long	.Lfunc_end23
+	.long	.Lfunc_begin24
+	.long	.Lfunc_end24
+	.long	.Lfunc_begin25
+	.long	.Lfunc_end25
+	.long	0
+	.long	0
+	.section	.debug_str,"MS",%progbits,1
+.Linfo_string0:
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
+.Linfo_string1:
+	.asciz	"C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common\\GLCD_V2M-MPS2.c" @ string offset=68
+.Linfo_string2:
+	.asciz	"P:\\Workspace\\Git\\MTB_CFA\\IOTKit_CM33_S_NS\\IOTKit_CM33_s" @ string offset=182
+.Linfo_string3:
+	.asciz	"foreground_color"              @ string offset=238
+.Linfo_string4:
+	.asciz	"unsigned short"                @ string offset=255
+.Linfo_string5:
+	.asciz	"uint16_t"                      @ string offset=270
+.Linfo_string6:
+	.asciz	"background_color"              @ string offset=279
+.Linfo_string7:
+	.asciz	"active_font"                   @ string offset=296
+.Linfo_string8:
+	.asciz	"width"                         @ string offset=308
+.Linfo_string9:
+	.asciz	"height"                        @ string offset=314
+.Linfo_string10:
+	.asciz	"offset"                        @ string offset=321
+.Linfo_string11:
+	.asciz	"unsigned int"                  @ string offset=328
+.Linfo_string12:
+	.asciz	"uint32_t"                      @ string offset=341
+.Linfo_string13:
+	.asciz	"count"                         @ string offset=350
+.Linfo_string14:
+	.asciz	"bitmap"                        @ string offset=356
+.Linfo_string15:
+	.asciz	"unsigned char"                 @ string offset=363
+.Linfo_string16:
+	.asciz	"uint8_t"                       @ string offset=377
+.Linfo_string17:
+	.asciz	"_GLCD_FONT"                    @ string offset=385
+.Linfo_string18:
+	.asciz	"GLCD_FONT"                     @ string offset=396
+.Linfo_string19:
+	.asciz	"CR0"                           @ string offset=406
+.Linfo_string20:
+	.asciz	"CR1"                           @ string offset=410
+.Linfo_string21:
+	.asciz	"DR"                            @ string offset=414
+.Linfo_string22:
+	.asciz	"SR"                            @ string offset=417
+.Linfo_string23:
+	.asciz	"CPSR"                          @ string offset=420
+.Linfo_string24:
+	.asciz	"IMSC"                          @ string offset=425
+.Linfo_string25:
+	.asciz	"RIS"                           @ string offset=430
+.Linfo_string26:
+	.asciz	"MIS"                           @ string offset=434
+.Linfo_string27:
+	.asciz	"ICR"                           @ string offset=438
+.Linfo_string28:
+	.asciz	"DMACR"                         @ string offset=442
+.Linfo_string29:
+	.asciz	"MPS2_SSP_TypeDef"              @ string offset=448
+.Linfo_string30:
+	.asciz	"LED"                           @ string offset=465
+.Linfo_string31:
+	.asciz	"RESERVED0"                     @ string offset=469
+.Linfo_string32:
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=479
+.Linfo_string33:
+	.asciz	"BUTTON"                        @ string offset=499
+.Linfo_string34:
+	.asciz	"RESERVED1"                     @ string offset=506
+.Linfo_string35:
+	.asciz	"CLK1HZ"                        @ string offset=516
+.Linfo_string36:
+	.asciz	"CLK100HZ"                      @ string offset=523
+.Linfo_string37:
+	.asciz	"COUNTER"                       @ string offset=532
+.Linfo_string38:
+	.asciz	"RESERVED2"                     @ string offset=540
+.Linfo_string39:
+	.asciz	"PRESCALE"                      @ string offset=550
+.Linfo_string40:
+	.asciz	"PSCNTR"                        @ string offset=559
+.Linfo_string41:
+	.asciz	"RESERVED3"                     @ string offset=566
+.Linfo_string42:
+	.asciz	"MISC"                          @ string offset=576
+.Linfo_string43:
+	.asciz	"MPS2_FPGAIO_TypeDef"           @ string offset=581
+.Linfo_string44:
+	.asciz	"int"                           @ string offset=601
+.Linfo_string45:
+	.asciz	"int32_t"                       @ string offset=605
+.Linfo_string46:
+	.asciz	"GLCD_Initialize"               @ string offset=613
+.Linfo_string47:
+	.asciz	"delay_ms"                      @ string offset=629
+.Linfo_string48:
+	.asciz	"wr_reg"                        @ string offset=638
+.Linfo_string49:
+	.asciz	"GLCD_Uninitialize"             @ string offset=645
+.Linfo_string50:
+	.asciz	"GLCD_SetForegroundColor"       @ string offset=663
+.Linfo_string51:
+	.asciz	"GLCD_SetBackgroundColor"       @ string offset=687
+.Linfo_string52:
+	.asciz	"GLCD_ClearScreen"              @ string offset=711
+.Linfo_string53:
+	.asciz	"GLCD_SetWindow"                @ string offset=728
+.Linfo_string54:
+	.asciz	"wr_cmd"                        @ string offset=743
+.Linfo_string55:
+	.asciz	"wr_dat_start"                  @ string offset=750
+.Linfo_string56:
+	.asciz	"wr_dat_only"                   @ string offset=763
+.Linfo_string57:
+	.asciz	"wr_dat_stop"                   @ string offset=775
+.Linfo_string58:
+	.asciz	"GLCD_SetFont"                  @ string offset=787
+.Linfo_string59:
+	.asciz	"GLCD_DrawPixel"                @ string offset=800
+.Linfo_string60:
+	.asciz	"wr_dat"                        @ string offset=815
+.Linfo_string61:
+	.asciz	"GLCD_DrawHLine"                @ string offset=822
+.Linfo_string62:
+	.asciz	"GLCD_DrawVLine"                @ string offset=837
+.Linfo_string63:
+	.asciz	"GLCD_DrawRectangle"            @ string offset=852
+.Linfo_string64:
+	.asciz	"GLCD_DrawChar"                 @ string offset=871
+.Linfo_string65:
+	.asciz	"GLCD_DrawString"               @ string offset=885
+.Linfo_string66:
+	.asciz	"GLCD_DrawBargraph"             @ string offset=901
+.Linfo_string67:
+	.asciz	"GLCD_DrawBitmap"               @ string offset=919
+.Linfo_string68:
+	.asciz	"GLCD_VScroll"                  @ string offset=935
+.Linfo_string69:
+	.asciz	"GLCD_FrameBufferAccess"        @ string offset=948
+.Linfo_string70:
+	.asciz	"GLCD_FrameBufferAddress"       @ string offset=971
+.Linfo_string71:
+	.asciz	"spi_tran"                      @ string offset=995
+.Linfo_string72:
+	.asciz	"ms"                            @ string offset=1004
+.Linfo_string73:
+	.asciz	"reg"                           @ string offset=1007
+.Linfo_string74:
+	.asciz	"val"                           @ string offset=1011
+.Linfo_string75:
+	.asciz	"color"                         @ string offset=1015
+.Linfo_string76:
+	.asciz	"i"                             @ string offset=1021
+.Linfo_string77:
+	.asciz	"x"                             @ string offset=1023
+.Linfo_string78:
+	.asciz	"y"                             @ string offset=1025
+.Linfo_string79:
+	.asciz	"w"                             @ string offset=1027
+.Linfo_string80:
+	.asciz	"h"                             @ string offset=1029
+.Linfo_string81:
+	.asciz	"xe"                            @ string offset=1031
+.Linfo_string82:
+	.asciz	"ye"                            @ string offset=1034
+.Linfo_string83:
+	.asciz	"cmd"                           @ string offset=1037
+.Linfo_string84:
+	.asciz	"dat"                           @ string offset=1041
+.Linfo_string85:
+	.asciz	"font"                          @ string offset=1045
+.Linfo_string86:
+	.asciz	"length"                        @ string offset=1050
+.Linfo_string87:
+	.asciz	"ch"                            @ string offset=1057
+.Linfo_string88:
+	.asciz	"j"                             @ string offset=1060
+.Linfo_string89:
+	.asciz	"wb"                            @ string offset=1062
+.Linfo_string90:
+	.asciz	"ptr_ch_bmp"                    @ string offset=1065
+.Linfo_string91:
+	.asciz	"str"                           @ string offset=1076
+.Linfo_string92:
+	.asciz	"char"                          @ string offset=1080
+.Linfo_string93:
+	.asciz	"ptr_bmp"                       @ string offset=1085
+.Linfo_string94:
+	.asciz	"dy"                            @ string offset=1093
+.Linfo_string95:
+	.asciz	"enable"                        @ string offset=1096
+.Linfo_string96:
+	.asciz	"_Bool"                         @ string offset=1103
+.Linfo_string97:
+	.asciz	"byte"                          @ string offset=1109
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
+	.section	".note.GNU-stack","",%progbits
+	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
+	.ARM_attribute	16, 1	@ Tag_AV_eba
+	.section	.debug_line,"",%progbits
+.Lline_table_start0:

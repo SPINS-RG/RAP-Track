@@ -1,0 +1,13 @@
+-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier
+-I./RTE/Device/IOTKit_CM33_FP
+-I./RTE/_V2M-MPS2_
+-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Driver/Include
+-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board
+-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common
+-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include
+-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include
+-D__UVISION_VERSION="541" -DIOTKit_CM33_FP -D_RTE_
+-o ./objects/usart_v2m-mps2.o -MMD "C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/CMSIS/Driver/USART_V2M-MPS2.c"

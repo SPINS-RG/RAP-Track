@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/CMakeFiles/IOTKit_CM33_s+V2MMPS2"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/CMakeFiles/IOTKit_CM33_s+V2MMPS2.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/CMakeFiles/IOTKit_CM33_s+V2MMPS2-complete.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-build.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-configure.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-download.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-install.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-mkdir.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-patch.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-test.rule"
+		},
+		{
+			"file" : "P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/IOTKit_CM33_s+V2MMPS2/src/IOTKit_CM33_s+V2MMPS2-stamp/IOTKit_CM33_s+V2MMPS2-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"IOTKit_CM33_s+V2MMPS2"
+		],
+		"name" : "IOTKit_CM33_s+V2MMPS2"
+	}
+}

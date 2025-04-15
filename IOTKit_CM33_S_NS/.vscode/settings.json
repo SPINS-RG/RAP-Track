@@ -1,0 +1,31 @@
+{
+    "cmsis-csolution.actions": [
+        {
+            "path": "IOTKit_CM33_s_ns.csolution.yml",
+            "target": "V2MMPS2",
+            "projects": [
+                {
+                    "path": "IOTKit_CM33_s/IOTKit_CM33_s.cproject.yml",
+                    "config": {
+                        "debug": "Arm Debugger",
+                        "run": "Flash Device"
+                    }
+                },
+                {
+                    "path": "IOTKit_CM33_ns/IOTKit_CM33_ns.cproject.yml",
+                    "config": {
+                        "run": "Flash Device"
+                    }
+                }
+            ],
+            "config": {
+                "run": "Flash Device",
+                "debug": "Arm Debugger"
+            }
+        }
+    ],
+    "clangd.arguments": [
+        "--compile-commands-dir=p:\\Workspace\\Git\\MTB_CFA\\IOTKit_CM33_S_NS\\out\\IOTKit_CM33_s\\V2MMPS2",
+        "--compile-commands-dir=p:\\Workspace\\Git\\MTB_CFA\\IOTKit_CM33_S_NS\\out\\IOTKit_CM33_ns\\V2MMPS2"
+    ]
+}

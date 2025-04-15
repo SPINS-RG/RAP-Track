@@ -1,0 +1,18 @@
+# ninja log v6
+5	189	7532431193612185	CMakeFiles/database	ad3f069742725194
+85	641	7532239545637794	CMakeFiles/Keil_Board_Support_V2M-MPS2_IOT-Kit_LED_2_0_0.dir/C_/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/LED_V2M-MPS2.o	7641cd6271efaaf6
+5	189	7532431193612185	P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/database	ad3f069742725194
+141	645	7532239546197764	CMakeFiles/Keil_Compiler_ARM_Compiler_I_O_STDOUT_User_1_2_0.dir/C_/Users/aj4775/AppData/Local/arm/packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.o	1a3b30a4a83ae67b
+6	3288	7532332509034371	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/stdout_USART.o	3c165ebb075fc2e5
+1289	2218	7532237159446854	CMakeFiles/Keil_Board_Support_V2M-MPS2_IOT-Kit_Graphic_LCD_2_0_0.dir/C_/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_Fonts.o	7e9881273a305b05
+1396	2258	7532237160511166	CMakeFiles/Keil_Device_Startup_C_Startup_1_2_0.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/RTE/Device/IOTKit_CM33_FP/system_IOTKit_CM33.o	68077a13c966a91f
+1373	2300	7532237160281182	CMakeFiles/Keil_Device_Startup_C_Startup_1_2_0.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/RTE/Device/IOTKit_CM33_FP/startup_IOTKit_CM33.o	ddb68855a99b0de3
+6	476	7532723821236719	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/cfa.o	6374543e15979f51
+6	323	7532740558319820	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/main_s.o	f453c691f302b3aa
+106	690	7532239545857754	CMakeFiles/Keil_CMSIS_Driver_USART_1_0_0.dir/C_/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/CMSIS/Driver/USART_V2M-MPS2.o	54ca1d676afc0402
+45	344	7532740558712639	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/Secure_Functions_CFA.o	889120933d0c1432
+65	999	7532239545436389	CMakeFiles/Keil_Board_Support_V2M-MPS2_IOT-Kit_Graphic_LCD_2_0_0.dir/C_/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.o	688f0b40f45dea61
+377	828	7532740562036128	P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/out/IOTKit_CM33_s/V2MMPS2/IOTKit_CM33_s.axf	c310e214bcd6f647
+3	2114	7532431193072223	build.ninja	9ae84fd6a540b442
+19	377	7532740558446423	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/mtb.o	420acc90b6356fff
+32	356	7532740558576428	CMakeFiles/Group_Source_Group_1.dir/P_/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/IOTKit_CM33_s/Secure_Functions.o	53f86338e18dc37d

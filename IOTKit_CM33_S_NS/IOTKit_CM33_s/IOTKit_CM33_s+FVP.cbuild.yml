@@ -1,0 +1,299 @@
+build:
+  generated-by: csolution version 2.6.0
+  solution: ../IOTKit_CM33_s_ns.csolution.yml
+  project: IOTKit_CM33_s.cproject.yml
+  context: IOTKit_CM33_s+FVP
+  compiler: AC6
+  device: ARM::IOTKit_CM33_FP
+  device-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+  processor:
+    dsp: on
+    endian: little
+    fpu: sp
+    trustzone: secure
+    core: Cortex-M33
+  packs:
+    - pack: ARM::CMSIS@5.9.0
+      path: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0
+    - pack: Keil::ARM_Compiler@1.7.2
+      path: ${CMSIS_PACK_ROOT}/Keil/ARM_Compiler/1.7.2
+    - pack: Keil::MDK-Middleware@7.17.0
+      path: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0
+    - pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      path: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2
+  optimize: debug
+  debug: on
+  misc:
+    ASM:
+      - -masm=auto
+    C:
+      - -std=c99
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    Link:
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - IOTKit_CM33_FP
+    - _RTE_
+  define-asm:
+    - IOTKit_CM33_FP
+    - _RTE_
+  add-path:
+    - RTE/Device/IOTKit_CM33_FP
+    - RTE/_FVP
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Driver/Include
+    - ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Board
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include
+  add-path-asm:
+    - RTE/Device/IOTKit_CM33_FP
+    - RTE/_FVP
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Driver/Include
+    - ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Board
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include
+    - ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include
+  output-dirs:
+    intdir: ../tmp
+    outdir: ../out/IOTKit_CM33_s/FVP
+    rtedir: RTE
+  output:
+    - type: elf
+      file: IOTKit_CM33_s.axf
+    - type: cmse-lib
+      file: IOTKit_CM33_s_CMSE_Lib.o
+  components:
+    - component: ARM::CMSIS:CORE@5.6.0
+      condition: ARMv6_7_8-M Device
+      from-pack: ARM::CMSIS@5.9.0
+      selected-by: ARM::CMSIS:CORE
+      files:
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+          category: include
+          version: 5.6.0
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include/tz_context.h
+          category: header
+          version: 5.6.0
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Template/ARMv8-M/main_s.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: Secure mode 'main' module for ARMv8-M
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Template/ARMv8-M/tz_context.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: RTOS Context Management (TrustZone for ARMv8-M)
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Documentation/Core/html/index.html
+          category: doc
+          version: 5.6.0
+    - component: Keil::Board Support&V2M-MPS2 IOT-Kit:Graphic LCD@2.0.0
+      condition: IOTKit CMSIS
+      from-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      selected-by: Keil::Board Support&V2M-MPS2 IOT-Kit:Graphic LCD
+      implements: Board Support:Graphic LCD@1.0.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_Config.h
+          category: header
+          version: 2.0.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_Fonts.c
+          category: source
+          version: 2.0.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/GLCD_V2M-MPS2.c
+          category: source
+          version: 2.0.0
+    - component: Keil::Board Support&V2M-MPS2 IOT-Kit:LED@2.0.0
+      condition: IOTKit CMSIS
+      from-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      selected-by: Keil::Board Support&V2M-MPS2 IOT-Kit:LED
+      implements: Board Support:LED@1.0.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/LED_V2M-MPS2.c
+          category: source
+          version: 2.0.0
+    - component: Keil::CMSIS Driver:USART@1.0.0
+      condition: IOTKit CMSIS
+      from-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      selected-by: Keil::CMSIS Driver:USART
+      implements: CMSIS Driver:USART@2.4.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/CMSIS/Driver/USART_V2M-MPS2.c
+          category: source
+          version: 1.0.0
+    - component: Keil::Compiler&ARM Compiler:I/O:STDOUT&User@1.2.0
+      condition: ARMCC Cortex-M
+      from-pack: Keil::ARM_Compiler@1.7.2
+      selected-by: Keil::Compiler&ARM Compiler:I/O:STDOUT&User
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c
+          category: source
+          version: 1.2.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/ARM_Compiler/1.7.2/Template/stdout_USART.c
+          category: source
+          attr: template
+          version: 1.2.0
+          select: STDOUT via USART
+        - file: ${CMSIS_PACK_ROOT}/Keil/ARM_Compiler/1.7.2/Template/stdout_display.c
+          category: source
+          attr: template
+          version: 1.2.0
+          select: STDOUT via Display
+        - file: ${CMSIS_PACK_ROOT}/Keil/ARM_Compiler/1.7.2/Template/stdout_user.c
+          category: source
+          attr: template
+          version: 1.2.0
+          select: STDOUT User Template
+    - component: Keil::Device:Startup&C Startup@1.2.0
+      condition: IOTKit_CM33 CMSIS
+      from-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      selected-by: Keil::Device:Startup&C Startup
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include/SMM_MPS2.h
+          category: header
+          version: 1.2.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include
+          category: include
+          version: 1.2.0
+        - file: RTE/Device/IOTKit_CM33_FP/RTE_Device.h
+          category: header
+          attr: config
+          version: 1.0.0
+        - file: RTE/Device/IOTKit_CM33_FP/ac6_arm.sct
+          category: linkerScript
+          attr: config
+          version: 1.0.0
+        - file: RTE/Device/IOTKit_CM33_FP/partition_IOTKit_CM33.h
+          category: header
+          attr: config
+          version: 1.0.0
+        - file: RTE/Device/IOTKit_CM33_FP/startup_IOTKit_CM33.c
+          category: sourceC
+          attr: config
+          version: 1.2.0
+        - file: RTE/Device/IOTKit_CM33_FP/system_IOTKit_CM33.c
+          category: sourceC
+          attr: config
+          version: 1.2.0
+  apis:
+    - api: CMSIS Driver:USART@2.4.0
+      from-pack: ARM::CMSIS@5.9.0
+      implemented-by: Keil::CMSIS Driver:USART@1.0.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Documentation/Driver/html/group__usart__interface__gr.html
+          category: doc
+          version: 2.4.0
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Driver/Include/Driver_USART.h
+          category: header
+          version: 2.4.0
+    - api: Board Support:Graphic LCD@1.0.0
+      from-pack: Keil::MDK-Middleware@7.17.0
+      implemented-by: Keil::Board Support&V2M-MPS2 IOT-Kit:Graphic LCD@2.0.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Board/Board_GLCD.h
+          category: header
+          version: 1.0.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Doc/Board/html/group__bsp__glcd.html
+          category: doc
+          version: 1.0.0
+    - api: Board Support:LED@1.0.0
+      from-pack: Keil::MDK-Middleware@7.17.0
+      implemented-by: Keil::Board Support&V2M-MPS2 IOT-Kit:LED@2.0.0
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Board/Board_LED.h
+          category: header
+          version: 1.0.0
+        - file: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/Doc/Board/html/group__bsp__led.html
+          category: doc
+          version: 1.0.0
+  linker:
+    script: RTE/Device/IOTKit_CM33_FP/ac6_arm.sct
+  groups:
+    - group: Source Group 1
+      files:
+        - file: main_s.c
+          category: sourceC
+        - file: stdout_USART.c
+          category: sourceC
+    - group: Documentation
+      files:
+        - file: ../README.md
+          category: doc
+  constructed-files:
+    - file: RTE/_FVP/RTE_Components.h
+      category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: ARM::CMSIS@5.9.0
+      components:
+        - component: ::CMSIS Driver:USART(API)
+        - component: ARM::CMSIS:CORE@5.6.0
+    - license: <unknown>
+      packs:
+        - pack: Keil::ARM_Compiler@1.7.2
+      components:
+        - component: Keil::Compiler&ARM Compiler:I/O:STDOUT&User@1.2.0
+    - license: <unknown>
+      license-agreement: ${CMSIS_PACK_ROOT}/Keil/MDK-Middleware/7.17.0/license.rtf
+      packs:
+        - pack: Keil::MDK-Middleware@7.17.0
+      components:
+        - component: ::Board Support:Graphic LCD(API)
+        - component: ::Board Support:LED(API)
+    - license: <unknown>
+      packs:
+        - pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      components:
+        - component: Keil::Board Support&V2M-MPS2 IOT-Kit:Graphic LCD@2.0.0
+        - component: Keil::Board Support&V2M-MPS2 IOT-Kit:LED@2.0.0
+        - component: Keil::CMSIS Driver:USART@1.0.0
+        - component: Keil::Device:Startup&C Startup@1.2.0

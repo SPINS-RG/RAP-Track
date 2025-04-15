@@ -1,0 +1,10 @@
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/database.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/IOTKit_CM33_s+V2MMPS2.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Group_Source_Group_1.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Keil_Board_Support_V2M-MPS2_IOT-Kit_Graphic_LCD_2_0_0.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Keil_Board_Support_V2M-MPS2_IOT-Kit_LED_2_0_0.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Keil_CMSIS_Driver_USART_1_0_0.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Keil_Compiler_ARM_Compiler_I_O_STDOUT_User_1_2_0.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/Keil_Device_Startup_C_Startup_1_2_0.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/edit_cache.dir
+P:/Workspace/Git/MTB_CFA/IOTKit_CM33_S_NS/tmp/1/CMakeFiles/rebuild_cache.dir

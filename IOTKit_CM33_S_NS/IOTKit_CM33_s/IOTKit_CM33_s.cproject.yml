@@ -1,0 +1,118 @@
+project:
+  packs:
+    - pack: Keil::V2M-MPS2_IOTKit_BSP
+    - pack: ARM::CMSIS@5.9.0
+    - pack: Keil::ARM_Compiler
+    - pack: Keil::MDK-Middleware
+    - pack: Keil::MDK-Middleware_Graphics
+  setups:
+    - setup: Options for FVP
+      for-context: +FVP
+      processor:
+        fpu: sp
+        trustzone: secure
+      debug: "on"
+      misc:
+        - C:
+            - -std=c99
+          C-CPP:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          CPP:
+            - -xc++
+            - -std=c++11
+          ASM:
+            - -masm=auto
+          Link:
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --info sizes
+            - --info totals
+            - --info unused
+            - --info veneers
+            - --strict
+            - --summary_stderr
+            - --info summarysizes
+    - setup: Options for V2MMPS2
+      for-context: +V2MMPS2
+      processor:
+        fpu: sp
+        trustzone: secure
+      debug: "on"
+      misc:
+        - C:
+            - -std=c11
+          C-CPP:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          CPP:
+            - -xc++
+          ASM:
+            - -masm=auto
+          Link:
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --info sizes
+            - --info totals
+            - --info unused
+            - --info veneers
+            - --strict
+            - --summary_stderr
+            - --info summarysizes
+  linker:
+    - script: RTE/Device/IOTKit_CM33_FP/ac6_arm.sct
+  groups:
+    - group: Source Group 1
+      files:
+        - file: main_s.c
+        - file: stdout_USART.c
+        - file: mtb.c
+        - file: Secure_Functions.c
+        - file: cfa.c
+        - file: Secure_Functions_CFA.c
+    - group: Documentation
+      files:
+        - file: ../README.md
+  components:
+    - component: ARM::CMSIS:CORE
+    - component: Keil::Compiler&ARM Compiler:I/O:STDOUT&User
+    - component: Keil::Board Support&V2M-MPS2 IOT-Kit:Graphic LCD
+    - component: Keil::Board Support&V2M-MPS2 IOT-Kit:LED
+    - component: Keil::CMSIS Driver:USART
+    - component: Keil::Device:Startup&C Startup

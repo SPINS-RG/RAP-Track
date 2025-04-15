@@ -1,0 +1,20 @@
+solution:
+  created-by: uv2csolution@1.5.0
+  created-for: CMSIS-Toolbox@2.4.0
+  compiler: AC6
+  target-types:
+    - type: FVP
+      device: ARM::IOTKit_CM33_FP
+      optimize: debug
+    - type: V2MMPS2
+      device: ARM::IOTKit_CM33_FP
+      optimize: debug
+  projects:
+    - project: IOTKit_CM33_s/IOTKit_CM33_s.cproject.yml
+      for-context:
+        - +FVP
+        - +V2MMPS2
+    - project: IOTKit_CM33_ns/IOTKit_CM33_ns.cproject.yml
+      for-context:
+        - +FVP
+        - +V2MMPS2

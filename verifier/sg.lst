@@ -1,0 +1,13 @@
+101ffe00 <SECURE_NOPE>:
+101ffe08 <SECURE_register_callback>:
+101ffe10 <SECURE_start_cfa>:
+101ffe18 <Secure_LED_On>:
+101ffe20 <Secure_LED_Off>:
+101ffe28 <Secure_printf>:
+101ffe30 <Secure_LED_On_callback>:
+101ffe38 <Secure_LED_Off_callback>:
+101ffe40 <SECURE_log_loop_cond>:
+101ffe48 <SECURE_log_cond_br_taken>:
+101ffe50 <SECURE_log_cond_br_not_taken>:
+101ffe58 <SECURE_log_ret>:
+101ffe60 <SECURE_log_call>:

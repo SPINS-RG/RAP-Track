@@ -1,0 +1,26 @@
+build-idx:
+  generated-by: csolution version 2.6.0
+  csolution: IOTKit_CM33_s_ns.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: IOTKit_CM33_s/IOTKit_CM33_s.cproject.yml
+    - cproject: IOTKit_CM33_ns/IOTKit_CM33_ns.cproject.yml
+  cbuilds:
+    - cbuild: IOTKit_CM33_s/IOTKit_CM33_s+V2MMPS2.cbuild.yml
+      project: IOTKit_CM33_s
+      configuration: +V2MMPS2
+      messages:
+        info:
+          - IOTKit_CM33_s_ns.cbuild-set.yml - file is already up-to-date
+          - IOTKit_CM33_s_ns.cbuild-pack.yml - file is already up-to-date
+          - IOTKit_CM33_s+V2MMPS2.cbuild.yml - file is already up-to-date
+    - cbuild: IOTKit_CM33_ns/IOTKit_CM33_ns+V2MMPS2.cbuild.yml
+      project: IOTKit_CM33_ns
+      configuration: +V2MMPS2
+      depends-on:
+        - IOTKit_CM33_s+V2MMPS2
+      messages:
+        info:
+          - IOTKit_CM33_s_ns.cbuild-set.yml - file is already up-to-date
+          - IOTKit_CM33_s_ns.cbuild-pack.yml - file is already up-to-date
+          - IOTKit_CM33_ns+V2MMPS2.cbuild.yml - file is already up-to-date

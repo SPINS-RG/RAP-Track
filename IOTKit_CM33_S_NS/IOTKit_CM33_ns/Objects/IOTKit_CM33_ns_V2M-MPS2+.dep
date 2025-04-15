@@ -1,0 +1,61 @@
+Dependencies for Project 'IOTKit_CM33_ns', Target 'V2M-MPS2+': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (.\main_ns.c)(0x67353B25)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I .-I./RTE/Device/IOTKit_CM33_FP-I./RTE/_V2M-MPS2_-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include-D__UVISION_VERSION="541" -DIOTKit_CM33_FP -D_RTE_-o ./objects/main_ns.o -MMD)
+I (RTE\_V2M-MPS2_\RTE_Components.h)(0x66EDAF97)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm33.h)(0x664C8148)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\MDK-Middleware\7.17.0\Board\Board_LED.h)(0x5D14AA0A)
+I (..\IOTKit_CM33_s\Secure_Functions.h)(0x672E50D1)
+I (..\IOTKit_CM33_s\cfa.h)(0x672D4AFE)
+I (..\IOTKit_CM33_s\alcata_definitions.h)(0x6733AA01)
+I (..\IOTKit_CM33_s\Secure_Functions_CFA.h)(0x672E7E21)
+I (application.h)(0x672BBF4C)
+F (.\application.s)(0x67356D53)(--target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/Device/IOTKit_CM33_FP-I./RTE/_V2M-MPS2_-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 541" -Wa,armasm,--pd,"IOTKit_CM33_FP SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/application.o)
+I (IOTKit_CM33_ns\application.h)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\Secure_Functions.h)(0x00000000)
+I (IOTKit_CM33_ns\RTE\_V2MMPS2\RTE_Components.h)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm33.h)(0x67083643)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x65CFF119)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x65CFF119)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_gcc.h)(0x65CFF119)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv8.h)(0x65CFF119)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h)(0x66EB3A7A)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\cfa.h)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\alcata_definitions.h)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\Secure_Functions_CFA.h)(0x00000000)
+I (IOTKit_CM33_ns\application.h:)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\Secure_Functions.h:)(0x00000000)
+I (IOTKit_CM33_ns\RTE\_V2MMPS2\RTE_Components.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm33.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_gcc.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv8.h:)(0x00000000)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h:)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\cfa.h:)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\alcata_definitions.h:)(0x00000000)
+I (IOTKit_CM33_ns\..\IOTKit_CM33_s\Secure_Functions_CFA.h:)(0x00000000)
+F (..\IOTKit_CM33_s\Secure_Functions.h)(0x6735323E)()
+F (..\IOTKit_CM33_s\Objects\IOTKit_CM33_s_CMSE_Lib.o)(0x67358528)()
+F (..\README.md)(0x66EDAF62)()
+F (C:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Boards/ARM/V2M-MPS2/Common/LED_V2M-MPS2.c)(0x66EB3A79)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I .-I./RTE/Device/IOTKit_CM33_FP-I./RTE/_V2M-MPS2_-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include-D__UVISION_VERSION="541" -DIOTKit_CM33_FP -D_RTE_-o ./objects/led_v2m-mps2.o -MMD)
+I (RTE\_V2M-MPS2_\RTE_Components.h)(0x66EDAF97)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm33.h)(0x664C8148)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\Common\Include\SMM_MPS2.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\MDK-Middleware\7.17.0\Board\Board_LED.h)(0x5D14AA0A)
+F (RTE/Device/IOTKit_CM33_FP/RTE_Device.h)(0x671806DD)()
+F (RTE/Device/IOTKit_CM33_FP/ac6_arm.sct)(0x6733B311)()
+F (RTE/Device/IOTKit_CM33_FP/partition_IOTKit_CM33.h)(0x66EDAF62)()
+F (RTE/Device/IOTKit_CM33_FP/startup_IOTKit_CM33.c)(0x66EDAF62)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I .-I./RTE/Device/IOTKit_CM33_FP-I./RTE/_V2M-MPS2_-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include-D__UVISION_VERSION="541" -DIOTKit_CM33_FP -D_RTE_-o ./objects/startup_iotkit_cm33.o -MMD)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm33.h)(0x664C8148)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h)(0x66EB3A7A)
+F (RTE/Device/IOTKit_CM33_FP/system_IOTKit_CM33.c)(0x66EDAF62)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I .-I./RTE/Device/IOTKit_CM33_FP-I./RTE/_V2M-MPS2_-IC:/Users/aj4775/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/MDK-Middleware/7.17.0/Board-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/Common/Include-IC:/Users/aj4775/AppData/Local/arm/packs/Keil/V2M-MPS2_IOTKit_BSP/1.5.2/Device/IOTKit_CM33/Include-D__UVISION_VERSION="541" -DIOTKit_CM33_FP -D_RTE_-o ./objects/system_iotkit_cm33.o -MMD)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\IOTKit_CM33_FP.h)(0x66EB3A7A)
+I (C:\Users\aj4775\AppData\Local\arm\packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm33.h)(0x664C8148)
+I (C:\Users\aj4775\AppData\Local\arm\packs\Keil\V2M-MPS2_IOTKit_BSP\1.5.2\Device\IOTKit_CM33\Include\system_IOTKit_CM33.h)(0x66EB3A7A)
